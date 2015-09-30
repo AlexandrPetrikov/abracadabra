@@ -1,0 +1,16 @@
+body{
+	width:700px;
+	margin:0 auto;
+}
+h1{
+	color:#3B3333;
+}
+p{
+	color:#034E8D;
+}
+span{
+	color:#BD3A3A;
+}
+header>h1{
+	color:#228E34;
+}
