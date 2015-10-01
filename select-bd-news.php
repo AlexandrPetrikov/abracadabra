@@ -8,7 +8,7 @@ mysql_query(" SET NAMES 'utf8' ");//mysql_set_charset("utf8");
 		exit(mysql_error());
 	};
 
-$result = mysql_query(" SELECT * FROM news ");
+$result = mysql_query(" SELECT * FROM news ORDER BY id DESC");
 
 mysql_close();
 ?>

@@ -3,6 +3,7 @@ body{
 	flex-flow:row wrap;
 	width:98%;
 	margin:0 auto;
+	background:url("http://localhost/abracadabra/images/imgbg.png");
 }
 h1{
 	color:#3B3333;
@@ -19,11 +20,63 @@ header{
 	background:#6D6EA7;
 	flex-basis:100%;
 }
-header>h1{
-	color:#5494FF;
+header h1>a{
+	color:#30AE48;
+	margin-left:20px;
+	text-decoration:none;
+	font-family:'Lobster','Georgia';
+}
+nav{
+	margin:20px;
+}
+nav ul{
+	padding-left:0;
+	margin-left:10px;
+}
+nav ul li{
+	display:inline;
+	margin-left:-5px;
+	
+}
+nav ul li a{
+	text-decoration:none;
+	border:1px solid black;
+	padding:10px 20px 10px 20px;
+
+}
+/* ----------------------slider------------------------------- */
+.slider{
+	width:1200px;
+	height:400px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.slider .sliders{
+	display:block;
+	width:10000px;
+	height:400px;
+	margin:0;
+	pading:0;
+	backgroun:red;
+}
+.slider .slide{
+	padding-left:-40px;
+	float:left;
+	display:inline;
+	width:1200px;
+	list-style-type:none;
+}
+.slider .slide:nth-child(1){
+	margin-left:-40px;
+}
+
+img{
+	width:1200px;
+	height:400px;
 }
 /* ----------------------content ----------------------------- */
 section.content{
 	width:80%;
 	margin:0 auto;
+	background:#C7C6C6;
 }
