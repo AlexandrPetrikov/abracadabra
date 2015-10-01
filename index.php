@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link rel='stylesheet' href='css/global.css'>
 	<link rel='stylesheet' href='css/index.css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/index.js"></script>
@@ -56,7 +57,7 @@
 					<li><p>Contact us</p></li>
 					<li>Александр Петриков</li>
 					<li>Александр</li>
-					<li>Петриков</li>
+					<li>©2015 by CLCode </li>
 				</ul>
 			</div>
 		</div>

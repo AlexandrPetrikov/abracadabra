@@ -4,7 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
-	<link rel='stylesheet' href='css/index.css'>
+	<link rel='stylesheet' href='css/global.css'>
+	<link rel='stylesheet' href='css/news.css'>
 
 </head>
 <body>
@@ -55,7 +56,7 @@
 					<li><p>Contact us</p></li>
 					<li>Александр Петриков</li>
 					<li>Александр</li>
-					<li>Петриков</li>
+					<li>©2015 by CLCode </li>
 				</ul>
 			</div>
 		</div>
