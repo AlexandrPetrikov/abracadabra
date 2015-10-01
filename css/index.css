@@ -1,5 +1,7 @@
 body{
-	width:700px;
+	display:flex;
+	flex-flow:row wrap;
+	width:98%;
 	margin:0 auto;
 }
 h1{
@@ -11,6 +13,17 @@ p{
 span{
 	color:#BD3A3A;
 }
+/* ----------------------header------------------------------ */
+header{
+	display:flex;
+	background:#6D6EA7;
+	flex-basis:100%;
+}
 header>h1{
-	color:#228E34;
+	color:#5494FF;
+}
+/* ----------------------content ----------------------------- */
+section.content{
+	width:80%;
+	margin:0 auto;
 }
