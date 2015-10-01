@@ -19,6 +19,7 @@ header{
 	display:flex;
 	background:#6D6EA7;
 	flex-basis:100%;
+	/* -webkit-border-radius:10px 10px 30px 30px/0px 0px 90px 90px; */
 }
 header h1>a{
 	color:#30AE48;
@@ -46,7 +47,9 @@ nav ul li a{
 }
 /* ----------------------slider------------------------------- */
 .slider{
-	width:1200px;
+	displa:flex;
+	flex-flow:row wrap;
+	flex-basis:1200px;
 	height:400px;
 	margin:0 auto;
 	overflow:hidden;
@@ -76,7 +79,59 @@ img{
 }
 /* ----------------------content ----------------------------- */
 section.content{
-	width:80%;
+	display:flex;
+	flex-basis:80%;
 	margin:0 auto;
 	background:#C7C6C6;
+	overflow:hidden;
+}
+section.content article{
+	display:flex;
+	flex-flow:row wrap;
+	margin-left:20px;
+}
+.logo-abracadabra{
+	width:100%;
+}
+/* -------------------------footer--------------------------------- */
+
+footer{
+	display:flex;
+	flex-basis:100%;
+	flex-flow:row wrap;
+	background:url("http://localhost/abracadabra/images/imgbg.png");
+	margin-top:5px;
+	height:200px;
+	box-shadow:0px -10px 10px black;
+}
+footer p,
+footer ul{
+	color:#B08D00;
+	list-style-type:none;
+}
+.foot-box-group{
+	display:flex;
+	flex-basis:100%;
+	align-item:center;
+	justify-content:space-between;
+}
+.foot-box-group .foot-box1{
+	display:flex;
+	flex-basis:400px;
+	
+}
+.foot-box1 i img{
+	width:200px;
+	height:50px;
+	margin-left:10px;
+	margin-top:10px;
+}
+.foot-box-group .foot-box2{
+	display:flex;
+	flex-basis:400px;
+}
+
+.foot-box-group .foot-box3{
+	display:flex;
+	flex-basis:400px;
 }

@@ -5,14 +5,14 @@
 	<title>Document</title>
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' href='css/index.css'>
-	
+
 </head>
 <body>
 	<header>
 		<h1><a href="index.php">Abracadabra</a></h1>
 		<nav>
 			<ul>
-				<li><a href="#">Новости</a></li>
+				<li><a href="news.php">Новости</a></li>
 				<li><a href="#">Полезное</a></li>
 				<li><a href="#">Каталог</a></li>
 				<li><a href="#">Связь</a></li>
@@ -36,5 +36,29 @@
 			?>
 		</article>
 	</section>
+	<footer >
+		<div class="foot-box-group">
+			<div class="foot-box1">
+				<i><img src="http://localhost/abracadabra/images/CLCode.gif" alt=""></i>
+			</div>
+			<div class="foot-box2">
+				<ul>
+					<li><p>Contact us</p></li>
+					<li>mojref@gmail.com</li>
+					<li>pomo6nik@bk.ru</li>
+					<li>#######@gmail.com</li>
+
+				</ul>
+			</div>
+			<div class="foot-box3">
+				<ul>
+					<li><p>Contact us</p></li>
+					<li>Александр Петриков</li>
+					<li>Александр</li>
+					<li>Петриков</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
