@@ -5,20 +5,26 @@
 	<title>Document</title>
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' href='css/global.css'>
-	<link rel='stylesheet' href='css/news.css'>
 
 </head>
 <body>
 	<header>
-		<h1><a href="index.php">Abracadabra</a></h1>
-		<nav>
-			<ul>
-				<li><a href="news.php">Новости</a></li>
-				<li><a href="#">Полезное</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Связь</a></li>
-			</ul>
-		</nav>
+		<div class="logo">
+				<h1><a href="index.php">Abracadabra</a></h1>
+		</div>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="news.php">Новости</a></li>
+			<li><a href="#">Полезное</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Связь</a></li>
+		</ul>
+		<form action="">
+			<button class="log-in">Log In</button>
+			<button class="sign-up">Sign Up</button>
+		</form>
+	</nav>
 	</header>
 	<section class="content">
 		<article>
@@ -26,7 +32,7 @@
 				require "select-bd-news.php";
 				while($row = mysql_fetch_array($result)){
 			?>
-			<h1>           <?php echo $row['title']; ?><br></h1>
+			<h1><?php echo $row['title']; ?><br></h1>
 			<p><?php echo $row['text']; ?><br></p>
 			<span>Дата публикации: <?php echo $row['date'];	?></span>
 			<span><?php echo $row['time']; ?></span>

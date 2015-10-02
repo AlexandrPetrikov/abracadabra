@@ -5,22 +5,27 @@
 	<title>Document</title>
 	<link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
 	<link rel='stylesheet' href='css/global.css'>
-	<link rel='stylesheet' href='css/index.css'>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/index.js"></script>
 </head>
 <body>
 	<header>
-		<h1><a href="index.php">Abracadabra</a></h1>
-		<nav>
-			<ul>
-				<li><a href="news.php">Новости</a></li>
-				<li><a href="#">Полезное</a></li>
-				<li><a href="#">Каталог</a></li>
-				<li><a href="#">Связь</a></li>
-			</ul>
-		</nav>
+		<div class="logo">
+				<h1><a href="index.php">Abracadabra</a></h1>
+		</div>
 	</header>
+	<nav>
+		<ul>
+			<li><a href="news.php">Новости</a></li>
+			<li><a href="#">Полезное</a></li>
+			<li><a href="#">Каталог</a></li>
+			<li><a href="#">Связь</a></li>
+		</ul>
+		<form action="">
+			<button class="btn log-in">Log In</button>
+			<button class="btn sign-up">Sign Up</button>
+		</form>
+	</nav>
 	<div class="slider">
 		<ul class="sliders">
 			<li class="slide"><img src="images/slide1.jpg" alt="images slide"></li>
@@ -33,15 +38,13 @@
 	</div>
 	<section class="content">
 		<article>
-			<h1>Добро пожаловать на Abracadabra</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus doloremque quae quasi sint illum, numquam eum repudiandae iure quos voluptatibus distinctio consectetur similique soluta iusto accusantium reiciendis recusandae, nam veniam saepe, magnam vitae error! Ab assumenda tempore quibusdam provident nobis.</p>
-			<div><img class="logo-abracadabra" src="images/abracadabra.png" alt="logo"></div>
+				<img src="http://localhost/abracadabra/images/abracadabra.png" alt="abra">
 		</article>
 	</section>
 	<footer >
 		<div class="foot-box-group">
 			<div class="foot-box1">
-				<i><img src="http://localhost/abracadabra/images/CLCode.gif" alt=""></i>
+				<i><img src="http://localhost/abracadabra/images/CLCode.gif" alt="email"></i>
 			</div>
 			<div class="foot-box2">
 				<ul>
@@ -49,7 +52,6 @@
 					<li>mojref@gmail.com</li>
 					<li>pomo6nik@bk.ru</li>
 					<li>#######@gmail.com</li>
-
 				</ul>
 			</div>
 			<div class="foot-box3">

@@ -1,6 +1,6 @@
 /* ----------------------slider------------------------------- */
 .slider{
-	displa:flex;
+	display:inline;
 	flex-flow:row wrap;
 	flex-basis:1200px;
 	height:400px;

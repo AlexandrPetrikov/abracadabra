@@ -17,28 +17,40 @@ span{
 /* ----------------------header------------------------------ */
 header{
 	display:flex;
+	flex-flow:row wrap;
 	background:#6D6EA7;
 	flex-basis:100%;
+	height:160px;
+	align-items:center;
 	/* -webkit-border-radius:10px 10px 30px 30px/0px 0px 90px 90px; */
+}
+.logo{
+	display:flex;
+	flex-basis:100%;
+	height:100px;
+	margin-left:30%;
 }
 header h1 a{
 	color:#30AE48;
-	margin-left:20px;
 	text-decoration:none;
 	font-family:'Lobster','Georgia';
 	text-shadow:0 0 1px black;
+	font-size:60px;
 }
+/* -------------------navigation--------------------------- */
 nav{
-	margin:20px;
+	display:flex;
+	flex-basis:100%;
+	align-items:center;
+	background:#4D504E;
 }
 nav ul{
-	padding-left:0;
-	margin-left:10px;
+	flex-basis:auto;
+	flex-grow:29;
 }
 nav ul li{
-	display:inline;
+	display:inline-block;
 	margin-left:-5px;
-	
 }
 nav ul li a{
 	text-decoration:none;
@@ -49,6 +61,73 @@ nav ul li a{
 nav ul li a:hover{
 	color:#FFE082;
 	border-top:5px ridge #E8EAF6;
+}
+form{
+	display:inline-block;
+	flex-grow:1;
+}
+button{
+	width:80px;
+	height:40px;
+	border:none;
+	outline:none;
+	border-radius:5px;
+	color:#ECECEC;
+}
+.log-in{
+	background:#388E3C;
+}
+.sign-up{
+	background:#FF5722;
+}
+/* ----------------------slider------------------------------- */
+.slider{
+	display:inline;
+	flex-flow:row wrap;
+	flex-basis:1200px;
+	height:400px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.slider .sliders{
+	display:block;
+	width:10000px;
+	height:400px;
+	margin:0;
+	pading:0;
+	backgroun:red;
+}
+.slider .slide{
+	padding-left:-40px;
+	float:left;
+	display:inline;
+	width:1200px;
+	list-style-type:none;
+}
+.slider .slide:nth-child(1){
+	margin-left:-40px;
+}
+
+img{
+	width:1200px;
+	height:400px;
+}
+/* ----------------------content ----------------------------- */
+section.content{
+	display:flex;
+	flex-basis:1200px;
+	margin:0 auto;
+	background:#C7C6C6;
+	overflow:hidden;
+}
+section.content article{
+	display:inline-block;
+	width:200px;
+}
+article img{
+	display:block;
+	width:600px;
+	margin-left:270px;
 }
 /* -------------------------footer--------------------------------- */
 
@@ -74,8 +153,8 @@ footer ul{
 }
 .foot-box-group .foot-box1{
 	display:flex;
-	flex-basis:400px;
 	
+	flex-grow:2;
 }
 .foot-box1 i img{
 	width:200px;
@@ -85,10 +164,12 @@ footer ul{
 }
 .foot-box-group .foot-box2{
 	display:flex;
-	flex-basis:400px;
+	
+	flex-grow:2;
 }
 
 .foot-box-group .foot-box3{
 	display:flex;
-	flex-basis:400px;
+	
+	flex-grow:2;
 }
