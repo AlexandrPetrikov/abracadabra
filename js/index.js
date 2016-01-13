@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 	//configurations
-	var width = 1200;
+	var width = 1350;
 	var animationSpeed = 400;
 	var pause = 3000;
 	var countSlide = 1;
@@ -27,9 +27,7 @@ $(document).ready(function(){
 	function stopInterval(){
 		clearInterval(interval);
 	}
-
 	$slider.on('mouseenter', stopInterval).on('mouseleave', startSlider);
-
 	startSlider();
 
 });
