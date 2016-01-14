@@ -20,28 +20,30 @@ header{
 	display:inline-block;
 	background:url('../images/header-bg.jpg');
 	height:200px;
-	align-items:center;
  	width:1350px;
   	margin:0 auto;
 	.logo{
 		display:inline-block;
 		height:100px;
 		margin-left:10%;
-		h1 a{
+		a {
+		  text-decoration:none;
+		  h1 {
 			color:#30AE48;
-			text-decoration:none;
 			font-family:'Lobster','Georgia';
 			text-shadow:0 0 5px black;
 			font-size:60px;
+		  }
 		}
-	  h2{
+	  a {
+		text-decoration:none;
+		h2{
+
 			margin-top:-20px;
-			a{
-			  font-family:'Lobster','Georgia';
-			  text-decoration:none;
-			  color:#30AE48;
-			  text-shadow:0 0 10px black;
-			}
+			font-family:'Lobster','Georgia';
+			color:#30AE48;
+			text-shadow:0 0 10px black;
+		}
 	  }
 	}
 	
@@ -143,11 +145,13 @@ aside{
 		&:hover{
 		  color: #d0dfa1;
 		  background:blue;
+		  background: -webkit-linear-gradient(left,#040E8D,#034E8D 50%);
 		}
 	  }
 	  &:first-child{
 		a{
 		  border-top:1px solid black;
+		  text-decoration:none;
 		}
 	  }
 	  &:last-child{
@@ -194,29 +198,15 @@ footer{
 		list-style-type:none;
 	}
 	.foot-box-group{
-		display:flex;
-		flex-basis:100%;
-		align-item:center;
-		justify-content:space-between;
+		display:inline-block;
 		.foot-box1{
-			display:flex;
-			flex-grow:2;
-			img{
-				width:200px;
-				height:50px;
-				margin-left:10px;
-				margin-top:10px;
-			}
+			display:inline-block;
 		}
 		.foot-box2{
-			display:flex;
-			flex-grow:2;
+			display:inline-block;
 		}
 		.foot-box3{
-			display:flex;
-			flex-grow:2;
+			display:inline-block;
 		}
 	}
 }
-
-
