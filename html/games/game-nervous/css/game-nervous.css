@@ -8,6 +8,7 @@
 	border:2px solid black;
 }
 .prime{
+    border-radius:100%;
 	width:100px;
 	height:100px;
 	background: #3D4B82;
@@ -72,6 +73,7 @@ button[class=left]{
 	background:black;
 }
 .target{
+    border-radius:100%;
 	background: #000;
 	display:inline-block;
 	position:relative;
