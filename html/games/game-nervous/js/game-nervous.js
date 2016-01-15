@@ -1,3 +1,7 @@
+$(function(){
+    $('header').load('../../../header.html');
+    $('footer').load('../../../footer.html');
+})
 function Target(id) {
 	/*Global variables for target*/
 	var marginTop;
@@ -48,6 +52,7 @@ function Killer(id){
 				id.css('top',killerPosTop+1);
 			}
 		});
+        event.preventDefault();
 	};
 	/*killer move left*/
 	this.left = function(){
@@ -115,8 +120,25 @@ $(document).keyup(function(e){
 			killer.center();
 			break;
 	}
-	
 });
+    /* for no control scroll browser*/
+    $(document).keydown(function(e){
+        var code = e.keyCode;
+        switch(code){
+            case 37:
+                return false;
+                break;
+            case 38:
+                return false;
+                break;
+            case 39:
+                return false;
+                break;
+            case 40:
+                return false;
+                break;
+        }
+    });
 	/*new obj target*/
 var target = new Target($('#target'));
 	/*interval for return coord target and method fly()*/

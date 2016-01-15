@@ -7,7 +7,7 @@
 	<link rel='stylesheet/less' href='css/global.less'>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/index.js"></script>
+	<script src="js/game-nervous.js"></script>
 
 </head>
 <body>

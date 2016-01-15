@@ -19,7 +19,7 @@ body{
 header{
 	display:inline-block;
 	background:url('../images/header-bg.jpg');
-	height:200px;
+	height:250px;
  	width:1350px;
   	margin:0 auto;
 	.logo{
@@ -38,7 +38,6 @@ header{
 	  a {
 		text-decoration:none;
 		h2{
-
 			margin-top:-20px;
 			font-family:'Lobster','Georgia';
 			color:#30AE48;
@@ -46,52 +45,57 @@ header{
 		}
 	  }
 	}
-	
+  nav{
+      display:inline-block;
+      align-items:center;
+      background:#4D504E;
+      width:1350px;
+      margin-top:37px;
+      height:50px;
+      ul{
+          display:inline-block;
+          li{
+              display:inline-block;
+              margin-left:-5px;
+              a{
+                  text-decoration:line-through;
+                  border-bottom:5px ridge @color-letter;
+                  padding:10px 20px 10px 20px;
+                  color:@color-letter;
+                  &:hover{
+                      color:#FFE082;
+                      border-top:5px ridge @color-letter;
+                  }
+              }
+              &:nth-child(5) a{
+                text-decoration:none;
+              }
+          }
+      }
+      form{
+          display:inline-block;
+          margin-left: 700px;
+          button{
+              width:80px;
+              height:40px;
+              border:none;
+              outline:none;
+              border-radius:5px;
+              color:#ECECEC;
+        }
+        .log-in{
+            background:#388E3C;
+            text-decoration:line-through;
+        }
+        .sign-up{
+            background:#FF5722;
+            text-decoration:line-through;
+        }
+      }
+    }
+
 }
-/* -------------------navigation--------------------------- */
-nav{
-  display:inline-block;
-  align-items:center;
-  background:#4D504E;
-  width:1350px;
-  	ul{
-		display:inline-block;
-		li{
-			display:inline-block;
-			margin-left:-5px;
-			a{
-			  text-decoration:line-through;
-			  border-bottom:5px ridge @color-letter;
-				padding:10px 20px 10px 20px;
-				color:@color-letter;
-				&:hover{
-					color:#FFE082;
-					border-top:5px ridge @color-letter;
-				}
-			}
-		}
-	}
-}
-form{
-	display:inline-block;
- 	margin-left: 700px;
-	button{
-		width:80px;
-		height:40px;
-		border:none;
-		outline:none;
-		border-radius:5px;
-		color:#ECECEC;
-	}
-	.log-in{
-		background:#388E3C;
-	  	text-decoration:line-through;
-	}
-	.sign-up{
-	  background:#FF5722;
-	  text-decoration:line-through;
-	}
-}
+
 /* ----------------------slider------------------------------- */
 .slider{
 	display:inline-block;
@@ -130,36 +134,35 @@ aside{
   min-height:1000px;
   float:left;
   ul{
-	li{
-	  list-style-type:none;
-	  a{
-		display:inline-block;
-		text-decoration:line-through;
-		background: -webkit-linear-gradient(left,#034E8D,#040E8D 50%);
-		color:white;
-		padding:10px;
-		font-size:20px;
-		width:200px;
-		border-right:1px solid black;
-		border-left:1px solid black;
-		&:hover{
-		  color: #d0dfa1;
-		  background:blue;
-		  background: -webkit-linear-gradient(left,#040E8D,#034E8D 50%);
-		}
-	  }
-	  &:first-child{
-		a{
-		  border-top:1px solid black;
-		  text-decoration:none;
-		}
-	  }
-	  &:last-child{
-		a{
-		  border-bottom:1px solid black;
-		}
-	  }
-	}
+      li{
+          list-style-type:none;
+          a{
+              display:inline-block;
+              text-decoration:line-through;
+              background: -webkit-linear-gradient(left,#034E8D,#040E8D 50%);
+              color:white;
+              padding:10px;
+              font-size:20px;
+              width:200px;
+              border-right:1px solid black;
+              border-left:1px solid black;
+              &:hover{
+                  color: #d0dfa1;
+                  background:blue;
+                  background: -webkit-linear-gradient(left,#040E8D,#034E8D 50%);
+              }
+            }
+            &:first-child{
+                a{
+                  border-top:1px solid black;
+                }
+            }
+            &:last-child{
+                a{
+                  border-bottom:1px solid black;
+                }
+          }
+      }
   }
 }
 /* ----------------------content ----------------------------- */
