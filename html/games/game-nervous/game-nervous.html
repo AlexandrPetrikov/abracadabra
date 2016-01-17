@@ -21,41 +21,64 @@
     <!-- java script; conver less to css, jquery and more js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="../../../js/index.js"></script>
     <script src="js/game-nervous.js"></script>
     <!-------------------------------------------------------->
 </head>
 <body>
 <div class="wrapper" id="wrapper">
 <!-- begin header -->
-<header>
-
-</header>
+    <header>
+        <!-- ajax load -->
+    </header>
 <!-- end header --->
 
 <!-- begin main -->
-<main>
-    <div class="game-block" id="game-block">
-        <div class="prime" id="prime"></div>
-        <label class="target" id="target"></label>
-    </div>
-    <div class="panel-control" id="panel-control">
-        <button class="center" id="center">P</button>
-        <button class="top" id="top">T</button>
-        <button class="right" id="right">R</button>
-        <button class="bottom" id="bottom">B</button>
-        <button class="left" id="left">L</button>
-        <div class="score" id="score">
-            Score: <label id="score-text"></label>
+    <main>
+    <!--begin tabs-container-->
+        <div class="tabs-container" id="tabs-container">
+            <ul class="tab-top-text" id="tab-top-text">
+                <li class="show-tab">Детальное описание игры</li>
+                <li>ТЕСТ</li>
+                <li>ТЕСТ</li>
+            </ul>
+            <div class="tab-content show-tab-content">
+                Суть игры поймать точку, которая пропадает с интервалом в 1.5 сек.
+                Описание будет дописыватся по мере улучшения игры. Планируется сделать
+                её в стиле RPG, с 5 уровнями для начала. Приятной игры.
+            </div>
+            <div class="tab-content">Lorem s dolor sit amet.</div>
+            <div class="tab-content">Lorem d dolor sit amet.</div>
         </div>
-        <img class="codes" src="images/code.jpg">
-    </div>
-</main>
+    <!--end tabs-container-->
+
+    <!-- begin game block -->
+        <div class="game-block" id="game-block">
+            <div class="prime" id="prime"></div>
+            <label class="target" id="target"></label>
+        </div>
+    <!-- end game block -->
+
+    <!-- begin panel control -->
+        <div class="panel-control" id="panel-control">
+            <button class="center" id="center">P</button>
+            <button class="top" id="top">T</button>
+            <button class="right" id="right">R</button>
+            <button class="bottom" id="bottom">B</button>
+            <button class="left" id="left">L</button>
+            <div class="score" id="score">
+                Score: <label id="score-text"></label>
+            </div>
+            <img class="codes" src="images/code.jpg">
+        </div>
+    <!-- end panel control -->
+    </main>
 <!-- end main -->
 
 <!-- begin footer -->
-<footer>
-
-</footer>
+    <footer>
+        <!-- ajax load -->
+    </footer>
 <!-- end footer -->
 </div>
 </body>
