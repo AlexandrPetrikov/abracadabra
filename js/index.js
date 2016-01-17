@@ -1,8 +1,19 @@
 $(function(){
+
     $('header').load('header.html');
-    $('footer').load('footer.html');
+    $('footer').load('footer.html').css('bottom',0);
+
 });
 $(document).ready(function(){
+
+    /* code for block popup */
+   /*setTimeout(function(){
+        $('#popup, #popup-overlay').fadeIn(100);
+    },2000);
+    $('#popup-overlay').click(function(){
+        $('#popup, #popup-overlay').fadeOut(100);
+    });*/
+    /*************************/
 
 	//configurations
 	var width = 1350;

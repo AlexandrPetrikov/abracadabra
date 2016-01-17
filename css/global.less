@@ -1,9 +1,8 @@
 @color-letter: #E8EAF6;
-body{
-  display:block;
+html,body{
   margin:0;
   padding:0;
-
+  background:#464546;
 		h1{
 			color:#3B3333;
 		}
@@ -14,12 +13,12 @@ body{
 			color:#BD3A3A;
 		}
 }
-
 /* ----------------------header------------------------------ */
 .wrapper{
     width:1350px;
     margin:0 auto;
-    height:auto;
+    height:2720px;
+    position: relative;
     header{
         display:inline-block;
         background:url('../images/header-bg.jpg');
@@ -78,7 +77,9 @@ body{
           }
           form{
               display:inline-block;
-              margin-left: 700px;
+              float:right;
+              margin-right:20px;
+              margin-top:5px;
               button{
                   width:80px;
                   height:40px;
@@ -99,7 +100,9 @@ body{
         }
 
     }
-
+  main{
+    display:block;
+    height:1870px;
     /* ----------------------slider------------------------------- */
     .slider{
         display:inline-block;
@@ -134,7 +137,8 @@ body{
       display:inline-block;
       width:350px;
       background: -webkit-linear-gradient(top,darkgray,black);
-      min-height:1000px;
+      min-height:1100px;
+      height:100%;
       float:left;
       ul{
           li{
@@ -170,13 +174,13 @@ body{
     }
     /* ----------------------content ----------------------------- */
     section.content{
-      min-height: 1000px;
+      min-height: 1100px;
       float:left;
       display:inline-block;
       width:1000px;
+      height:100%;
       margin:-5px auto;
       background:#C7C6C6;
-      overflow:hidden;
       article{
             display:inline-block;
             width:200px;
@@ -187,17 +191,74 @@ body{
             }
         }
     }
+    .popup-overlay{
+        display:none;
+        background: rgba(0,0,0,0.7);
+        width:100%;
+        height:100%;
+        position:fixed;
+        top:0;
+        left:0;
+    }
+    .popup{
+        display:none;
+        background:url('../images/popup-bg.jpg') no-repeat;
+        background-size:100% 100%;
+        width:480px;
+        height:200px;
+        position:fixed;
+        top:30%;
+        left:30%;
+        border-radius:3px;
+        padding:10px;
+        box-shadow:inset 0 0 10px  black;
+        .popup-title{
+            font-size:25px;
+            margin-left:85px;
+            color:cornsilk;
+            text-shadow:0 0 30px black;
 
+        }
+        form{
+            input{
+              margin-left:85px;
+              width:270px;
+              margin-top:20px;
+              padding:10px;
+              font-size:20px;
+            }
+            .newsletter{
+
+            }
+            .send-newsletter{
+                width:295px;
+                cursor:pointer;
+                background:white;
+                color:#424242;
+                border:none;
+                outline:none;
+                &:hover{
+                    background:#424242;
+                    color:white;
+                }
+            }
+        }
+
+    }
+  }
 
     /* -------------------------footer--------------------------------- */
 
     footer{
         display:inline-block;
         width:1350px;
-        background:url("http://localhost/abracadabra/images/imgbg.png");
-        margin-top:5px;
+        background:rgba(0, 0, 0, 0.92);
         height:200px;
         box-shadow:0px -10px 10px black;
+        position:absolute;
+        bottom:0;
+        left:0;
+        clear:both;
         p,
         ul{
             color:#B08D00;
