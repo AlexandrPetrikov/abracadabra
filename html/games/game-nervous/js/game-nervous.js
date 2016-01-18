@@ -1,7 +1,23 @@
 $(function(){
     $('header').load('../../../header.html');
     $('footer').load('../../../footer.html');
-})
+});
+function Progress(id){
+    this.plus = function(idLevel,idTextProgress){
+        /* variables */
+        var currentVal = parseInt(id.val());
+
+        id.val(currentVal + 1);
+        if(currentVal == id.attr("max")){
+            id.val(0);
+            id.attr("max",+id.attr("max")+100);
+            idLevel.text(+idLevel.text()+1);
+        }
+        idTextProgress.text(id.val() + "/" + id.attr("max"));
+
+        //idTextProgress.text(currentVal + "/" + id.attr('max'));
+    }
+}
 function Target(id) {
 	/*Global variables for target*/
 	var marginTop;
@@ -98,6 +114,8 @@ function Killer(id){
 	};
 };
 $(document).ready(function(){
+
+
     /*click "NEW GAME" || $start-new-game*/
     $('#choose-new-game').on('click',function(){
         var $animationSpeed = 500;
@@ -112,11 +130,12 @@ $(document).ready(function(){
 
     /*click "START" || $start-game*/
     $("#start-game").on('click',function(){
+        var $animationSpeed = 400;
        if(!!$("#choose-male").prop("checked") || !!$("#choose-female").prop("checked")){
-          $("#game-menu").animate({"opacity":0},400,function(){
+          $("#game-menu").animate({"opacity":0},$animationSpeed,function(){
               $(this).css("display","none");
           });
-           $("#gender").animate({"opacity":0},400,function(){
+           $("#gender").animate({"opacity":0},$animationSpeed,function(){
                $(this).css("display","none");
            });
            $("#game-block-overlay").css("display","none");
@@ -131,9 +150,11 @@ $(document).ready(function(){
            alert("Choose gender");
        }
     });
+    /* prime function for game */
     function startNewGame(){
         var tgAnim;//interval for emulation fly target
         var score = $('#score-text');
+        var progress = new Progress($("#score"));
 
         /*new obj killer*/
         var killer = new Killer($('#killer'));
@@ -189,6 +210,7 @@ $(document).ready(function(){
                 if(target.killFly(killer.posY(),killer.posX())){
                     target.fly();
                     score.text(+score.text()+1);
+                    progress.plus($('#lvl-info'),$("#score-number"));
                 };
             });
         };

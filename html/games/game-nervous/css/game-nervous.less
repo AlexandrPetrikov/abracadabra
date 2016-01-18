@@ -1,5 +1,6 @@
 main{
   .info{
+      position:relative;
       margin:0;
       padding:0;
       background:chocolate;
@@ -7,6 +8,20 @@ main{
       height:60px;
       display:none;
       border:1px solid black;
+      .score-info{
+          position:absolute;
+          top:20px;
+          left:20px;
+          meter{
+              width:200px;
+              height:20px;
+          }
+          .score-number{
+              position:absolute;
+              left:80px;
+              top:1px;
+          }
+      }
   }
   .game-block{
       width:1350px;
@@ -117,97 +132,6 @@ main{
           left: 5px;
           width:10px;
           height:10px;
-      }
-  }
-  .panel-control{
-      display:inline-block;
-      float:left;
-      width:300px;
-      height:500px;
-      background: #95585A;
-      position:relative;
-      .begin-game{
-          display:block;
-          background: red;
-          ul{
-              list-style-type:none;
-              li{
-                  display:block;
-                  color:white;
-                  background:#101010;
-                  text-align:center;
-                  margin-left:-40px;
-                  height:50px;
-                  line-height:50px;
-                  cursor:pointer;
-                  &:hover{
-                      background:#1E1E1E;
-                      color:gold;
-                  }
-              }
-              &:first-child{
-                  margin-top:0px;
-              }
-          }
-      }
-      button{
-          position:absolute;
-          width:50px;
-          height:50px;
-          outline:none;
-          border:none;
-      }
-      button[class=center]{
-          background: #8C8BC8;
-          top:70px;
-          left:100px;
-          z-index:100;
-      }
-      button[class=top]{
-          background: #8C8BC8;
-          top:20px;
-          left:100px;
-          box-shadow:0 0 20px black;
-      }
-      button[class=right]{
-          background: #8C8BC8;
-          top:70px;
-          left:150px;
-          box-shadow:0 0 20px black;
-      }
-      button[class=bottom]{
-          background: #8C8BC8;
-          top:120px;
-          left:100px;
-          box-shadow:0 0 20px black;
-      }
-      button[class=left]{
-          background: #8C8BC8;
-          top:70px;
-          left:50px;
-          box-shadow:0 0 20px black;
-      }
-      .score{
-          position:absolute;
-          top:300px;
-          left:40px;
-          &::selection{
-              color:white;
-              background:black;
-          }
-      }
-      .codes{
-          position:absolute;
-          width:120px;
-          height:120px;
-          top:350px;
-          left:75px;
-          -webkit-filter:grayscale(100%);
-          transition:2s;
-          &:hover{
-              -webkit-filter:none;
-              cursor:pointer;
-          }
       }
   }
 }
