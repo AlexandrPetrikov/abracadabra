@@ -7,6 +7,8 @@ function Target(id) {
 	var marginTop;
 	var marginLeft;
 	/*----------------------------*/
+    id.css('display','inline-block');
+
 	this.fly = function(){
 		marginTop=Math.floor((Math.random()*490)+1);
 		marginLeft=Math.floor((Math.random()*990)+1);
@@ -31,6 +33,8 @@ function Killer(id){
 	var killerPosTop;
 	var parentTargetWidth = parseInt(id.parent().width());
 	var parentTargetHeight = parseInt(id.parent().height());
+
+    id.css('display','block');
 	/*killer move right*/
 	this.right = function(){
 		clearInterval(animateMove);
@@ -94,65 +98,103 @@ function Killer(id){
 	};
 };
 $(document).ready(function(){
-var tgAnim;
-var score = $('#score-text');
-	/*new obj killer*/
-var killer = new Killer($('#prime'));
-
-
-	/*control keyup killer*/
-$(document).keyup(function(e){
-	var code = e.keyCode;
-	switch(code){
-		case 37:
-            killer.left();
-			break;
-		case 38:
-            killer.top();
-			break;
-		case 39:
-            killer.right();
-			break;
-		case 40:
-            killer.bottom();
-			break;
-		case 32:
-			killer.center();
-			break;
-	}
-});
-    /* for no control scroll browser*/
-    $(document).keydown(function(e){
-        var code = e.keyCode;
-        switch(code){
-            case 37:
-                return false;
-                break;
-            case 38:
-                return false;
-                break;
-            case 39:
-                return false;
-                break;
-            case 40:
-                return false;
-                break;
-        }
+    /*click "NEW GAME" || $start-new-game*/
+    $('#choose-new-game').on('click',function(){
+        var $animationSpeed = 500;
+        /*if click "NEW GAME" then first menu hide, and second menu show*/
+        $('#first-game-menu').animate({'height':0,'display':'none'},$animationSpeed,function(){
+            $(this).css('display','none');
+        });
+        $('#second-game-menu').css('display','block')
+                              .animate({'height':'110px'},$animationSpeed);
+        $('#gender').animate({"top":"100px"},$animationSpeed);
     });
-	/*new obj target*/
-var target = new Target($('#target'));
-	/*interval for return coord target and method fly()*/
-function targetAnimate (){
-	clearInterval(tgAnim);
-	tgAnim = setInterval(function(){
-		target.fly();
-	},3000);
-	setInterval(function(){
-		if(target.killFly(killer.posY(),killer.posX())){
-			target.fly();
-			score.text(+score.text()+1);
-		};
-	});
-};
-targetAnimate();
+
+    /*click "START" || $start-game*/
+    $("#start-game").on('click',function(){
+       if(!!$("#choose-male").prop("checked") || !!$("#choose-female").prop("checked")){
+          $("#game-menu").animate({"opacity":0},400,function(){
+              $(this).css("display","none");
+          });
+           $("#gender").animate({"opacity":0},400,function(){
+               $(this).css("display","none");
+           });
+           $("#game-block-overlay").css("display","none");
+           setTimeout(function(){
+               startNewGame();
+           },1000);
+           $("#game-block").animate({"opacity":0},300,function(){
+               $(this).css({"background":"white","height":"640px"}).animate({"opacity":1},1000);;
+               $("#info").css("display","block");
+           });
+       }else{
+           alert("Choose gender");
+       }
+    });
+    function startNewGame(){
+        var tgAnim;//interval for emulation fly target
+        var score = $('#score-text');
+
+        /*new obj killer*/
+        var killer = new Killer($('#killer'));
+
+        /*control keyup killer*/
+        $(document).keyup(function(e){
+            var code = e.keyCode;
+            switch(code){
+                case 37:
+                    killer.left();
+                    break;
+                case 38:
+                    killer.top();
+                    break;
+                case 39:
+                    killer.right();
+                    break;
+                case 40:
+                    killer.bottom();
+                    break;
+                case 32:
+                    killer.center();
+                    break;
+            }
+        });
+        /* for no control scroll browser*/
+        $(document).keydown(function(e){
+            var code = e.keyCode;
+            switch(code){
+                case 37:
+                    return false;
+                    break;
+                case 38:
+                    return false;
+                    break;
+                case 39:
+                    return false;
+                    break;
+                case 40:
+                    return false;
+                    break;
+            }
+        });
+        /*new obj target*/
+        var target = new Target($('#target'));
+        /*interval for return coord target and method fly()*/
+        function targetAnimate (){
+            clearInterval(tgAnim);
+            tgAnim = setInterval(function(){
+                target.fly();
+            },3000);
+            setInterval(function(){
+                if(target.killFly(killer.posY(),killer.posX())){
+                    target.fly();
+                    score.text(+score.text()+1);
+                };
+            });
+        };
+        targetAnimate();
+    };
+
+
+
 });

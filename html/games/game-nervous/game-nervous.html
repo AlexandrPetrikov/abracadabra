@@ -52,26 +52,38 @@
         </div>
     <!--end tabs-container-->
 
+        <div class="info" id="info">
+            ss
+        </div>
     <!-- begin game block -->
         <div class="game-block" id="game-block">
-            <div class="prime" id="prime"></div>
+
+            <div class="game-block-overlay" id="game-block-overlay"></div>
+        <!-- begin block gender-->
+            <div class="gender" id="gender">
+                <label for="choose-male" class="gender-choose male" id="male"></label>
+                <label for="choose-female" class="gender-choose female" id="female"></label>
+                <input class="choose-male" id="choose-male" name="radio" type="radio"/>
+                <input class="choose-female" id="choose-female" name="radio" type="radio"/>
+            </div>
+        <!-- end block gender-->
+            <div class="game-menu" id="game-menu">
+            <!-- begin first game menu -->
+                <ul class="first-game-menu" id="first-game-menu">
+                    <li class="choose-new-game" id="choose-new-game">NEW GAME</li>
+                    <li>SETTING</li>
+                    <li>ABOUT</li>
+                </ul>
+            <!-- end first game menu -->
+                <ul class="second-game-menu" id="second-game-menu">
+                    <li class="start-game" id="start-game">START</li>
+                    <li>BACK</li>
+                </ul>
+            </div>
+            <div class="killer" id="killer" data-start="0"></div>
             <label class="target" id="target"></label>
         </div>
     <!-- end game block -->
-
-    <!-- begin panel control -->
-        <div class="panel-control" id="panel-control">
-            <button class="center" id="center">P</button>
-            <button class="top" id="top">T</button>
-            <button class="right" id="right">R</button>
-            <button class="bottom" id="bottom">B</button>
-            <button class="left" id="left">L</button>
-            <div class="score" id="score">
-                Score: <label id="score-text"></label>
-            </div>
-            <img class="codes" src="images/code.jpg">
-        </div>
-    <!-- end panel control -->
     </main>
 <!-- end main -->
 

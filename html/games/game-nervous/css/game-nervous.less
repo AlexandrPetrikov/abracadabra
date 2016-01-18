@@ -1,33 +1,123 @@
 main{
+  .info{
+      margin:0;
+      padding:0;
+      background:chocolate;
+      width:100%;
+      height:60px;
+      display:none;
+      border:1px solid black;
+  }
   .game-block{
-    width:1000px;
-    height:500px;
-    background: #D6CACA;
-    display:inline-block;
-    float:left;
-    position:relative;
-    border:2px solid black;
-    .prime{
-        border-radius:100%;
-        width:100px;
-        height:100px;
-        background: #3D4B82;
-        position:absolute;
-        left:0;
-        top:0;
-        border:0;
-        z-index:100;
-    }
-    .target{
-        border-radius:100%;
-        background: #000;
-        display:inline-block;
-        position:relative;
-        top: 5px;
-        left: 5px;
-        width:10px;
-        height:10px;
-    }
+      width:1350px;
+      height:700px;
+      background: url('../images/begin-game-bg.jpg') no-repeat;
+      background-size:100% 100%;
+      display:inline-block;
+      float:left;
+      position:relative;
+      border:2px solid black;
+      overflow:hidden;
+
+      .game-block-overlay{
+          position:absolute;
+          width:100%;
+          height:100%;
+          background:rgba(0,0,0,0.8);
+      }
+      .gender{
+          position:absolute;
+          top:-150px;
+          left:300px;
+          .gender-choose{
+              height:100px;
+              width:100px;
+              background:white;
+              display:inline-block;
+              cursor:pointer;
+          }
+          .male{
+              background:url('../images/gender-choose-bg.jpg') no-repeat;
+              &:hover{
+                  background:url('../images/gender-choose-bg.jpg') no-repeat -100px 0;
+              }
+          }
+          .female{
+              margin-left:550px;
+              background:url('../images/gender-choose-bg.jpg') no-repeat 0 -100px;
+              &:hover{
+                  background:url('../images/gender-choose-bg.jpg') no-repeat -100px -100px;
+              }
+          }
+          input[type=radio]{
+              width:20px;
+              height:20px;
+              position:absolute;
+          }
+          .choose-male{
+              top:120px;
+              left:35px;
+          }
+          .choose-female{
+              top:120px;
+              left:695px;
+          }
+      }
+      .game-menu{
+          position:absolute;
+          z-index:100;
+          color:white;
+          top:400px;
+          left:550px;
+          .first-game-menu{
+              list-style-type:none;
+              li{
+                  width:300px;
+                  text-align:center;
+                  margin-left:-40px;
+                  cursor:pointer;
+                  height:50px;
+                  border:1px solid black;
+                  line-height:50px;
+              }
+          }
+          .second-game-menu{
+              list-style-type:none;
+              display:none;
+              height:0;
+              overflow:hidden;
+              li{
+                  width:300px;
+                  text-align:center;
+                  margin-left:-40px;
+                  cursor:pointer;
+                  border:1px solid black;
+                  height:50px;
+                  line-height:50px;
+              }
+          }
+      }
+      .killer{
+          display:none;
+          width:100px;
+          height:100px;
+          background: #3D4B82;
+          position:absolute;
+          left:0;
+          top:0;
+          border:0;
+          z-index:100;
+      }
+      .target{
+          border-radius:100%;
+          background: #000;
+          display:none;
+          position:relative;
+          top: 5px;
+          left: 5px;
+          width:10px;
+          height:10px;
+      }
   }
   .panel-control{
       display:inline-block;
@@ -36,6 +126,30 @@ main{
       height:500px;
       background: #95585A;
       position:relative;
+      .begin-game{
+          display:block;
+          background: red;
+          ul{
+              list-style-type:none;
+              li{
+                  display:block;
+                  color:white;
+                  background:#101010;
+                  text-align:center;
+                  margin-left:-40px;
+                  height:50px;
+                  line-height:50px;
+                  cursor:pointer;
+                  &:hover{
+                      background:#1E1E1E;
+                      color:gold;
+                  }
+              }
+              &:first-child{
+                  margin-top:0px;
+              }
+          }
+      }
       button{
           position:absolute;
           width:50px;

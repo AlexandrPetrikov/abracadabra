@@ -10,7 +10,7 @@ $(document).ready(function(){
    setTimeout(function(){
         $('#popup, #popup-overlay').fadeIn(100);
     },2000);
-    $('#popup-overlay').click(function(){
+    $('#popup-overlay, #close-popup').click(function(){
         $('#popup, #popup-overlay').fadeOut(100);
     });
     /*-----------------------------------------*/
