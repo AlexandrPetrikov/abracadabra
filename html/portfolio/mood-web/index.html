@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!--less -->
+<link rel="stylesheet/less" href="css/style.less">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.3/less.min.js"></script>
+
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<div class="wrapper">
+<!-- start header -->
+<header data-type="background" data-speed="1.3">
+	<a name="top"></a>
+	<img id="logo" class="logo" src="images/chesh.png" alt="">
+	<a href="#bottom"><label class="header-button-right" ></label></a>
+	<label class="header-button-bottom">
+	<a href="#"><i class="fa fa-caret-down fa-2x"></i></a>
+</label>
+</header>
+<!-- end header -->
+
+
+<!-- start nav -->
+<div class="block-nav"><!--add this block, because <nav> after click on element <nav> runing slide-effect, and nav road more than necessary -->
+	<nav id="top-nav" class="top-nav">
+		<ul>
+			<li><a href="#about-me">ABOUT ME</a></li>
+			<li><a href="#services">SERVICES</a></li>
+			<li><a href="#portfolio">PORTFOLIO</a></li>
+			<li><a href="#clients">CLIENTS</a></li>
+			<li><a href="#contacts">CONTACTS</a></li>
+		</ul>
+	</nav>
+</div>
+<!-- end nav -->
+
+
+<!-- start main -->
+<main>
+	<article class="about-me">
+		<h1><a name="about-me">ABOUT ME</a></h1>
+		<p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit placeat eligendi debitis minus ex omnis repudiandae voluptates aliquam autem esse libero, rem possimus! Sunt impedit, nostrum esse tenetur a delectus et fugit sed voluptatem itaque alias, eius voluptates! Sit natus totam maiores tempore eveniet quibusdam commodi delectus doloribus quis ad . Lorem ipsum dolor sit </p>
+		<img class="about-img" src="images/about-img.png" alt="">
+
+	</article>
+	<article class="services">
+	<!-- добавить тригер при клике на лейбл: a(this) -->
+		<h1><a name="services">SERVICES</a></h1>
+		<ul>
+			<li><label class="web-design"></label><br>
+			<a href="#">WEB DESIGN</a></li>
+			<li><label class="graphic-design"></label><br>
+			<a href="#">GRAPHIC DESIGN</a></li>
+			<li><label class="illustration"></label><br>
+			<a href="#">ILLUSTRATION</a></li>
+		</ul>
+		<div class="services-img">
+			
+		</div>
+	
+	</article>
+	<article class="portfolio">
+		<h1><a name="portfolio">PORTFOLIO</a></h1>
+		<div class="group-portfolio">
+			<ul class="first-line-portfolio">
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img1.png" alt="">
+				</li>
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img2.png" alt="">
+				</li>
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img3.png" alt="">
+				</li>
+			</ul>
+			<ul class="second-line-portfolio">
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img4.png" alt="">
+				</li>
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img5.png" alt="">
+				</li>
+				<li>
+					<div class="portfolio-details"></div>
+					<img id="img-prtf" src="images/portfolio-img6.png" alt="">
+				</li>
+			</ul>
+		</div>
+		<i class="car-down fa fa-caret-down fa-3x"></i>
+	</article>
+	<article class="clients">
+		<h1><a name="clients">CLIENTS</a></h1>
+		<div class="clients-group">
+			<div class="first-line-clients">
+				<img src="images/client-img1.png" alt="">
+				<img src="images/client-img2.png" alt="">
+				<img src="images/client-img3.png" alt="">
+			</div>
+			<div class="second-line-clients">
+				<img src="images/client-img4.png" alt="">
+				<img src="images/client-img5.png" alt="">
+				<img src="images/client-img6.png" alt="">
+			</div>
+		</div>
+
+	</article>
+	<article class="contacts">
+		<h1><a name="contacts">CONTACT</a></h1>
+		<div class="form-contacts">
+			<form action="">
+				<input type="text" placeholder="Your name" required>
+				<input type="email" required placeholder="Your email"><br>
+				<textarea></textarea>
+				<input type="submit" value="SEND">
+			</form>
+		</div>
+		<div class="more-contacts">
+			<ul class="list-contacts">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta placeat tempora adipisci iusto dolorem natus eum nisi ex necessitatibus saepe! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, animi?</li>
+				<li class="my-email"><i class="fa fa-envelope-o fa-3x"></i>mojref@gmail.com</li>
+				<li class="my-tel"><i class="fa fa-mobile fa-5x"></i>+38066xxxxxxx</li>
+				<li class="my-skype"> <i class="fa fa-skype fa-3x"></i>bkxtorx</li>
+			</ul>			
+		</div>
+	</article>
+	
+</main>
+<!-- end main -->
+
+
+<!-- start footer -->
+<footer>
+	<div class="share">
+		<a href="#"><i class="fa fa-behance fa-2x fa-inverse"></i></a>
+		<a href="#">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-square-o fa-stack-2x"></i>
+				<i class="fa fa-facebook fa-stack-1x"></i>
+			</span>
+		</a>
+		<a name="bottom" href="#"><i class="fa fa-youtube fa-2x fa-inverse"></i></a>
+		<a href="#"><i class="fa fa-instagram fa-2x fa-inverse"></i></a>
+	</div>
+</footer>
+<!-- end footer -->
+</div>
+</body>
+</html>

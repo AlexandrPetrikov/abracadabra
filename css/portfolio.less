@@ -1,0 +1,83 @@
+.wrapper{
+    header{
+      nav{
+        margin-top:100px;
+      }
+    }
+    main{
+        aside{
+            min-height:2270px;
+        }
+        section.content{
+            min-height:2270px;
+            .site-links{
+                padding:7px;
+                display: inline-block;
+                width: 100%;
+                .about-site{
+                    position:relative;
+                    width: 320px;
+                    height: 250px;
+                    float:left;
+                    margin:5px;
+                    background:white;
+                    &:hover .current-info{
+                        left:0;
+                    }
+                    img {
+                        display:block;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                    .brandmedia{
+                        height:100px;
+                        margin-top:70px;
+                    }
+                    .mood-web{
+                        height:150px;
+                        margin-top:20px;
+                    }
+                    .manure{
+                        width:150px;
+                        height:200px;
+                        margin:30px 80px;
+                    }
+                    .current-info{
+                        position:absolute;
+                        top:0;
+                        left:-9999px;
+                        background:rgba(0,0,0,0.9);
+                        width:280px;
+                        height:210px;
+                        padding:20px;
+
+                        .technologies{
+                            span{
+                                color:red;
+                            }
+                            .used{
+                                color:green;
+                            }
+                        }
+                        a{
+                            display:inline-block;
+                            border:2px solid black;
+                            color:black;
+                            position:absolute;
+                            text-decoration:none;
+                            background:rgba(46, 45, 46, 0.8);
+                            border-radius:100px;
+                            top:180px;
+                            margin-left:80px;
+                            padding:10px 20px;
+                            &:hover{
+                                color:gold;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

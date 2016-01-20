@@ -1,0 +1,458 @@
+	@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+	/* Working branch and if you have connect to the internet*/
+	body{
+		margin:0;
+		padding:0;
+		background: rgb(23,23,27);
+		font-family: 'Bree Serif', serif;
+	}
+.wrapper{
+	width:1400px;
+	margin:0 auto;
+	.header{
+		.header-menu{
+			height:107px;
+			min-width:1350px;
+			.site-logo{
+				position:relative;
+				display:inline-block;
+				width:500px;
+				height:107px;
+				float:left;
+				i{
+					position: absolute;
+					top:35px;
+					left:20px;
+					color:rgb(225,227,230);
+				}
+				h1{
+					position: absolute;
+					left:60px;
+					top:20px;
+					font-size:22px;
+					display:inline-block;
+					a{
+						color:rgb(228,231,233);
+						text-decoration: none;
+						&:hover{
+							color:#FF7474;
+						}
+					}
+				}
+				span{
+					position: absolute;
+					top:40px;
+					left:220px;
+					color:rgb(165,165,175);
+				}
+			}
+			nav{
+				display:inline-block;
+				min-width:850px;
+				i{
+					display: inline-block;
+					margin-top:35px;
+					float:left;
+					color:rgb(225,227,230);
+				}
+				ul{
+					margin-top:40px;
+					li{
+						display:inline-block;
+						list-tyle:none;
+						margin-left:80px;
+							a{
+								color:rgb(255,255,255);
+								text-decoration: none;
+								&:hover{
+									color:#FFF633
+								}
+							}
+					}
+				}
+			}
+		}
+		.slider-in-header{
+			background:rgb(37,39,43);
+			height:425px;
+			margin-top:0;
+			.bg-slider{
+				display:inline-block;
+				margin-top: 16px;
+				margin-left: 40px;
+				background-color: #BABABA;
+				width:1270px;
+				height:390px;
+				border-radius:4px;
+				.left-column-slider{
+					font-family: monospace;
+					font-weight: bold;
+					padding-top:150px;
+					padding-left:84px;
+					width:500px;
+					height:240px;
+					float:left;
+						.top-text{
+							color:rgb(64,68,74);
+						}
+						.center-text{
+							color: rgb(46,46,46);
+							font-size:40px;
+							font-style: italic;
+						}
+						.bottom-text{
+							color: rgb(125,129,140);
+						}
+						a{
+							display: inline-block;
+							margin-top:40px;
+							width:110px;
+							height: 30px;
+							border-radius: 4px;
+							text-decoration:none;
+						}
+						.read-more{
+								background: -webkit-linear-gradient(bottom, rgb(130,155,189) 30%, rgb(195,210,230) 99%);
+								border: 1px solid rgb(137,157,184);
+								text-align:center;
+								line-height: 30px;
+								color:white;
+								text-shadow:2px 2px 2px #829bbd;
+						}
+						.portfolio{
+							background: #e8eaf0;
+							text-align: center;
+							line-height: 30px;
+							color:#95a1af;
+							border: 1px solid #a8aebd;
+						}
+				}
+
+				/*Если slider-block: mg:left:0; тогда 
+				  высота нормально, но блок сдвигаеться
+				*/
+				.right-column-slider{
+					float: left;
+					margin-left:100px;
+					position:relative;
+					width:480px;
+					height:325px;
+					border-radius:5px;
+					//overflow: hidden; if this tag, carSlider hidden
+					.slider-block{
+						margin-top:10px;
+						padding:0px;
+							li{
+								position:absolute;
+								list-style:none;
+								float: left;	
+								opacity:0;
+								margin-top: 20px;					
+								img{
+									width:480px;
+									height:310px;
+									border-radius:2px;
+								}
+								&:nth-child(1){
+									opacity:1;
+								}
+
+							}
+							
+					}
+					.carSlider{
+						position: absolute;
+						margin:340px 200px;
+						width: 200px;
+						input[type="radio"]{
+							position: relative;
+							opacity: 0;
+							z-index:9999;
+							display: none;
+							//font-size:20px;
+
+							
+						}
+						input[type="radio"]:not(checked) + label{
+							cursor:pointer;
+							padding-left:15px;
+							background: url("../images/slider-carret.png") no-repeat -21px 0px;
+						}
+						input[type="radio"]:checked + label{
+							padding-left:15px;
+							background: url("../images/slider-carret.png") no-repeat -1px 0;
+						}
+					}
+				}
+				
+			}
+		}
+
+	}
+	main{
+		.tabs{
+			height: 433px;
+			padding-top: 40px;
+			padding-left: 27px;
+			.tabs-menu{
+				display: inline-block;
+				width: 1300px;
+				ul{
+					margin-top:0;
+					background: #c2c6cc;
+					.top-menu-tab{	
+						cursor:pointer;
+						background: #c2c6cc;
+						margin-left: -4px;
+						padding:5px 20px;
+						display: inline-block;
+						height:62px;
+						color:white;
+						.big-text-tab{
+							font-size: 25px;
+						}
+					}
+					li:first-child{
+						margin-left: -40px;
+					} 
+					.chooseTab{
+						background: #26272c;
+					}
+				}
+			}
+			.tab-content{
+				display: none;
+				.left-column{
+					width:800px;
+					float: left;
+					.top-text{
+						color: #7f8792;
+					}
+					.bottom-text{
+						color: #666e78;
+					}
+					.social{
+						height:50px;
+						margin-top: 30px;	
+						line-height: 40px;
+						a{
+							text-decoration: none;
+							color:white;
+							margin-left: 40px;
+							padding:5px 20px;
+							border-radius: 4px;
+						}
+						.read-more{
+							background: #4f5562;
+						}
+						.social-tw{
+							background: #547d9b;
+						}
+						.social-fb{
+							background: #435785;
+						}
+					}	
+				}
+				.right-column{
+					float: right;
+					width: 500px;
+					img{
+						width: 400px;
+						height:200px;
+						float: right;
+					}
+					.get-in-touch{
+						display: inline-block;
+						float: right;
+						margin-top: 10px;
+						padding:5px 20px;
+						border-radius: 4px;
+						border:none;
+						background: #4f5562;
+						color:white;
+						font-weight:bolder;
+						font-size: 15px;
+						text-decoration: none;
+
+					}
+				}
+			}
+			.showTab{
+					display: inline-block;
+			}
+		}
+		.brandmedia-more{
+			background: #26272a;
+			min-width:1330px;
+			color:white;
+			height:400px;
+			img{		
+				margin-top: 40px;
+				}
+			.brandmedia-tour{
+				display: inline-block;
+				width:265px;
+				margin-left: 130px;
+
+			}
+			.brandmedia-apps{
+				display: inline-block;
+				width:265px;
+				margin-left: 130px;
+			}
+			.brandmedia-jobs{
+				display: inline-block;
+				width:265px;
+				margin-left: 130px;
+			}
+			a{
+				color: white;
+				text-decoration: none;
+				background: #505765;
+				padding: 5px 20px;
+				border-radius: 5px;
+			}
+		}
+		.newsletter{
+			height:80px;
+			min-width: 1330px;
+			line-height: 20px;
+			padding-top: 20px;
+			.main-newsletter{
+				width:1200px;
+				margin-left: 70px;
+				background: #3a3c41;
+				padding-bottom: 5px;
+				border-radius: 5px;	
+				color:white;
+				.img-left{
+					display: inline-block;
+					float:left;
+					padding: 21px 25px;
+					background: #747680;
+					border-radius: 5px 0 0 5px;
+				}
+				p{
+					display: inline-block;
+					padding-top: 5px;
+					margin-left: 25px;
+				}
+				#email{
+					margin-left: 50px;
+					height: 30px;
+					border-radius: 5px;
+					border: none;
+					width: 200px;
+				}
+				#sign-up{
+					height:30px;
+					margin-left: 20px;	
+				}
+				#sign-up{
+					background:-webkit-linear-gradient(bottom, #C8271D 0%, #a95d46 100%);
+					border:0;
+					border-radius: 5px;
+					padding:5px 20px;
+					color:white;
+					font-weight: bold;
+					font-size: 15px;
+					cursor: pointer;
+				}
+
+			}
+
+		}
+	}
+	footer{
+		min-width:1330px;
+		color:white;
+		.site-navigation{
+			width:200px;
+			display: inline-block;
+			float:left;
+			p{
+				margin-left: 40px;
+			}
+			ul{
+				li{
+					list-style:none;
+					a{
+						color:white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.blog-categories{
+			width:200px;
+			display: inline-block;
+			float:left;
+			p{
+				margin-left: 40px;
+			}
+			ul{
+				li{
+					list-style:none;
+					a{
+						color:white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.jobs-board{
+			width:200px;
+			display: inline-block;
+			float:left;
+			p{
+				margin-left: 40px;
+			}
+			ul{
+				li{
+					list-style:none;
+					a{
+						color:white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.connect{
+			width:200px;
+			display: inline-block;
+			float:left;
+			p{
+				margin-left: 40px;
+			}
+			ul{
+				li{
+					list-style:none;
+					a{
+						color:white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.brand-media-video{
+			display: inline-block;
+			width:200px;
+			float:left;
+			padding-top: 20px;
+			img{
+				height:150px;
+			}
+		}
+		.brandmedia{
+			display: inline-block;
+			width:300px;
+			font-size:12px;
+			margin-left: 50px;
+				a{
+					text-decoration: none;
+					color:white;
+					font-size:15px;
+				}
+		}
+	}
+}

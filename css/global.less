@@ -19,6 +19,7 @@ html,body{
     margin:0 auto;
     height:2720px;
     position: relative;
+    overflow:hidden;
     header{
         display:inline-block;
         background:url('../images/header-bg.jpg');
@@ -70,7 +71,8 @@ html,body{
                             border-top:5px ridge @color-letter;
                         }
                     }
-                    &:nth-child(5) a{
+                    &:nth-child(5) a,
+                    &:nth-child(1) a{
                       text-decoration:none;
                     }
                 }

@@ -1,0 +1,471 @@
+html{
+
+}
+body{
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	overflow-y:scroll;
+}
+.wrapper{
+	width:100%;
+	max-width:2000px;
+	margin: 0 auto;
+	header{
+		margin:0;
+		padding:0;
+		width:100%;
+		background: url("../images/header-bg.png") no-repeat fixed;
+		height:650px;
+		background-size:100% 651px;
+		text-align:center;
+		position: relative;
+		.logo{
+			position: absolute;
+			top: 100px;
+			width:500px;
+			height:200px;
+			margin-left: -10%;
+		}
+		.header-button-right{
+			display: inline-block;
+			float:right;
+			width:50px;
+			height:50px;
+			background: url("../images/header-button-right.png") no-repeat;
+			background-size:100% 100%;
+			margin-top: 100px;
+			cursor:pointer;
+			&:hover{
+				opacity:0.7;
+			}
+		}
+		.header-button-bottom{
+			display: inline-block;
+			width:51px;
+			height:50px;
+			margin-top: 525px;
+			cursor:pointer;
+			a{
+				display:block;
+				width:50px;
+				height:50px;
+				background: #36b7b3;
+				color:white;
+				border-radius:100%;
+				line-height:50px;
+				i{
+					vertical-align:middle;
+					&:hover{
+						color:gold;
+					}
+				}
+			}
+		}
+	}
+	.block-nav{
+		min-height:70px;
+		.top-nav{
+			width:100%;
+			background: #36b7b3;
+			margin:0;
+			position:static;
+			text-align:center;
+			ul{
+				display: inline-block;
+				text-align:center;
+				li{
+						display: inline-block;
+						list-style-type:none;
+						margin-left: 40px;
+					a{
+						display: inline-block;
+						text-decoration:none;
+						color:white;
+						padding:10px 20px;
+						border-radius:5px;
+						&:hover{
+							background: #d55727;
+						}
+					}
+				}
+				&:first-child{
+					margin-left: -100px;
+				}
+			}
+		}
+		.top-nav-retrofit{
+			position:fixed;
+			z-index:10000;
+			max-width:2000px;
+		}
+	}
+	main{
+		width:100%;
+		margin:0;
+		padding:0;
+		.about-me{	
+			min-height:600px;
+			text-align:center;
+			margin-top: 100px;
+			h1{
+				margin-top: 60px;
+				a{
+				font-size:1.5em;
+				width:200px;
+				border-bottom:1px solid #DE4B19;
+				text-decoration:none;
+				color:black;
+				}
+			}
+			.about-text{
+				display: inline-block;
+				width:350px;
+				margin-left: 10%;
+				margin-top: 300px;
+			}
+			.about-img{
+				display: inline-block;
+				margin-right: 10%;
+				width:600px;
+			}
+		}
+		.services{
+			text-align:center;
+			h1{
+				margin-top: 60px;
+				a{
+				font-size:1.5em;
+				width:200px;
+				border-bottom:1px solid #DE4B19;
+				text-decoration:none;
+				color:black;
+				}
+			}
+			ul{
+				display:inline-block;
+				margin-top: 50px;
+				width:100%;
+				li{
+					margin-left: 20%;
+					display: inline-block;
+					text-align:center;
+					a{
+						color:black;
+						text-decoration:none;
+						&:hover{
+							color:gold;
+						}
+					}
+					&:first-child{
+						margin-left:-3%;
+					}
+					label{
+						cursor:pointer;
+					}
+				}
+				.web-design{
+					background: url("../images/web-design.png") no-repeat;
+					width:70px;
+					height:70px;
+					display: inline-block;
+				}
+				.graphic-design{
+					background: url("../images/graphic-design.png") no-repeat;
+					width:70px;
+					height:70px;
+					display: inline-block;
+				}
+				.illustration{
+					background: url("../images/illustration.png") no-repeat;
+					width:70px;
+					height:70px;
+					display: inline-block;
+				}
+			}
+			.services-img{
+				background: url("../images/services.png") no-repeat;
+				background-size: 100% 100%;
+				height:450px;
+				margin-top: 100px;
+
+			}
+
+		}
+		.portfolio{
+			text-align:center;
+			h1{
+				margin-top: 60px;
+				a{
+					font-size:1.5em;
+					width:200px;
+					border-bottom:1px solid #DE4B19;
+					text-decoration:none;
+					color:black;
+				}
+			}
+			.group-portfolio{
+				width:100%;
+				.first-line-portfolio{
+					margin-top: 100px;
+					width:100%;
+					margin-left: -40px;
+					li{
+						list-style-type:none;
+						
+						img{
+							width:33.3333333%;
+							height:300px;
+							float:left;	
+							position:relative;
+							&:hover{
+								opacity: 0.5;
+								cursor:pointer;
+							}
+						}
+						
+					}
+				}
+				.second-line-portfolio{
+					width:100%;
+					margin-left: -40px;
+					li{
+						list-style-type:none;
+						img{
+							width:33.3333333%;
+							height:300px;
+							float:left;
+							&:hover{
+								opacity: 0.5;
+								cursor:pointer;
+							}
+						}
+					}
+				}
+				.portfolio-details{
+					width:100%;
+					height:300px;
+					position: absolute;
+					top:0;
+					left:0;
+					background: rgb(48,48,48,0.1);
+					display: none;
+				}
+			}
+			.car-down{
+				color:#F04801;
+				cursor:pointer;
+			}
+		}
+		.clients{
+			text-align:center;
+			h1{
+				margin-top: 60px;
+				a{
+					font-size:1.5em;
+					width:200px;
+					border-bottom:1px solid #DE4B19;
+					text-decoration:none;
+					color:black;
+				}
+			}
+			.clients-group{
+				width:100%;
+				.first-line-clients{
+					display: inline-block;
+					width:100%;
+					text-align:center;
+					height:200px;
+					img{
+						width:20%;
+						height:100px;
+					}
+				}
+				.second-line-clients{
+					margin-top: 50px;
+					display: inline-block;
+					width:100%;
+					text-align:center;
+					height:200px;
+					img{
+						width:20%;
+						height:100px;
+					}
+				}
+			}
+		}
+		.contacts{
+			margin-top: 50px;
+			width:100%;
+			height:750px;
+			background: url("../images/contacts-bg.png") no-repeat;
+			background-size: 100% 100%;
+			padding-top:40px;
+			text-align:center;
+			h1{
+				margin-top: 60px;
+				a{
+					font-size:1.5em;
+					width:200px;
+					border-bottom:1px solid #DE4B19;
+					text-decoration:none;
+					color:white;
+				}
+			}
+			.form-contacts{
+				display: inline-block;
+				width:401px;
+				margin-top: 50px;
+				text-align:left;
+				input[type="text"]{
+					width:401px;
+					height:30px;
+					border:1px solid #F04801;
+					background:black;
+					opacity:0.5;
+					color:white;
+				}
+				input[type="email"]{
+					margin-top: 10px;
+					width:401px;
+					height:30px;
+					border:1px solid #F04801;
+					background:black;
+					opacity:0.5;
+					color:white;
+				}
+				::-webkit-input-placeholder{
+					color: white;
+					font-size: 16px;
+					padding-left: 20px;
+				}
+				textarea{
+					margin-top: 30px;
+					resize:none;
+					width: 400px;
+					height:300px;
+					border:1px solid #F04801;
+					background:black;
+					opacity:0.5;
+					color:white;
+				}
+				input[type="submit"]{
+					background: #F04801;
+					border:none;
+					width:150px;
+					height:35px;
+					border-radius:5px;
+					color:white;
+					opacity:0.7;
+					text-shadow:0px 0px 0px white;
+					margin-top:10px;
+					&:hover{
+						background: #AF4011;
+						opacity:0.9;
+						cursor:pointer;
+					}
+				}
+			}
+			.more-contacts{
+				display: inline-block;
+				width:400px;
+				vertical-align:top;
+				margin: 20px 70px;
+				color:white;
+				line-height:30px;
+				text-align:left;
+				.list-contacts{
+					list-style-type: none;
+					.my-email{
+						margin-top:60px;
+						i{
+							float:left;
+							line-height: 30px;
+							margin-right: 60px;
+						}
+					}
+					.my-tel{
+						margin-top:60px;
+						i{
+							float:left;
+							line-height: 30px;
+							margin-right: 65px;
+						}
+					}
+					.my-skype{
+						margin-top:60px;
+						i{
+							float:left;
+							line-height: 30px;
+							margin-right: 65px;
+							color:white;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer{
+		clear:both;
+		height:80px;
+		width:100%;
+		background: #F04801;
+		line-height:50px;
+		text-align:center;
+		.share{
+			padding-top: 20px;
+			width:100%;
+			a{
+				display: inline-block;
+				color:white;
+				font-size: 25px;
+				margin-left: 10%;
+				span{
+					margin-top: -5px;
+				}
+				i{
+					display: inline-block;
+					margin-top: -10px;
+				}
+				&:first-child{
+					margin-left:0;
+				}
+				&:hover{
+					opacity:0.5;
+				}
+			}
+		}
+	}
+}
+
+/*----------------------media width 1280px -----------------*/
+@media screen and(max-width:1280px){
+.wrapper{
+	main{
+		.about-me{
+			.about-text{
+				display: inline-block;
+				margin: 0 auto;
+				width:300px;
+			}
+			.about-img{
+				margin: 0 auto;
+				display: block;
+				width:300px;
+				
+			}
+
+		}
+	}
+	.contacts{
+		min-height:1100px;
+		.form-contacts{
+			display: block;
+			margin: 0 20%;
+		}
+		.more-contacts{
+			display: block;
+		}
+	}
+}
+}

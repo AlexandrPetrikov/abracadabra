@@ -1,0 +1,455 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.wrapper {
+  width: 100%;
+  max-width: 2000px;
+  margin: 0 auto;
+}
+.wrapper header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: url("../images/header-bg.png") no-repeat fixed;
+  height: 650px;
+  background-size: 100% 651px;
+  text-align: center;
+  position: relative;
+}
+.wrapper header .logo {
+  position: absolute;
+  top: 100px;
+  width: 500px;
+  height: 200px;
+  margin-left: -10%;
+}
+.wrapper header .header-button-right {
+  display: inline-block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  background: url("../images/header-button-right.png") no-repeat;
+  background-size: 100% 100%;
+  margin-top: 100px;
+  cursor: pointer;
+}
+.wrapper header .header-button-right:hover {
+  opacity: 0.7;
+}
+.wrapper header .header-button-bottom {
+  display: inline-block;
+  width: 51px;
+  height: 50px;
+  margin-top: 525px;
+  cursor: pointer;
+}
+.wrapper header .header-button-bottom a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: #36b7b3;
+  color: white;
+  border-radius: 100%;
+  line-height: 50px;
+}
+.wrapper header .header-button-bottom a i {
+  vertical-align: middle;
+}
+.wrapper header .header-button-bottom a i:hover {
+  color: gold;
+}
+.wrapper .block-nav {
+  min-height: 70px;
+}
+.wrapper .block-nav .top-nav {
+  width: 100%;
+  background: #36b7b3;
+  margin: 0;
+  position: static;
+  text-align: center;
+}
+.wrapper .block-nav .top-nav ul {
+  display: inline-block;
+  text-align: center;
+}
+.wrapper .block-nav .top-nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 40px;
+}
+.wrapper .block-nav .top-nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.wrapper .block-nav .top-nav ul li a:hover {
+  background: #d55727;
+}
+.wrapper .block-nav .top-nav ul:first-child {
+  margin-left: -100px;
+}
+.wrapper .block-nav .top-nav-retrofit {
+  position: fixed;
+  z-index: 10000;
+  max-width: 2000px;
+}
+.wrapper main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.wrapper main .about-me {
+  min-height: 600px;
+  text-align: center;
+  margin-top: 100px;
+}
+.wrapper main .about-me h1 {
+  margin-top: 60px;
+}
+.wrapper main .about-me h1 a {
+  font-size: 1.5em;
+  width: 200px;
+  border-bottom: 1px solid #DE4B19;
+  text-decoration: none;
+  color: black;
+}
+.wrapper main .about-me .about-text {
+  display: inline-block;
+  width: 350px;
+  margin-left: 10%;
+  margin-top: 300px;
+}
+.wrapper main .about-me .about-img {
+  display: inline-block;
+  margin-right: 10%;
+  width: 600px;
+}
+.wrapper main .services {
+  text-align: center;
+}
+.wrapper main .services h1 {
+  margin-top: 60px;
+}
+.wrapper main .services h1 a {
+  font-size: 1.5em;
+  width: 200px;
+  border-bottom: 1px solid #DE4B19;
+  text-decoration: none;
+  color: black;
+}
+.wrapper main .services ul {
+  display: inline-block;
+  margin-top: 50px;
+  width: 100%;
+}
+.wrapper main .services ul li {
+  margin-left: 20%;
+  display: inline-block;
+  text-align: center;
+}
+.wrapper main .services ul li a {
+  color: black;
+  text-decoration: none;
+}
+.wrapper main .services ul li a:hover {
+  color: gold;
+}
+.wrapper main .services ul li:first-child {
+  margin-left: -3%;
+}
+.wrapper main .services ul li label {
+  cursor: pointer;
+}
+.wrapper main .services ul .web-design {
+  background: url("../images/web-design.png") no-repeat;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+.wrapper main .services ul .graphic-design {
+  background: url("../images/graphic-design.png") no-repeat;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+.wrapper main .services ul .illustration {
+  background: url("../images/illustration.png") no-repeat;
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+}
+.wrapper main .services .services-img {
+  background: url("../images/services.png") no-repeat;
+  background-size: 100% 100%;
+  height: 450px;
+  margin-top: 100px;
+}
+.wrapper main .portfolio {
+  text-align: center;
+}
+.wrapper main .portfolio h1 {
+  margin-top: 60px;
+}
+.wrapper main .portfolio h1 a {
+  font-size: 1.5em;
+  width: 200px;
+  border-bottom: 1px solid #DE4B19;
+  text-decoration: none;
+  color: black;
+}
+.wrapper main .portfolio .group-portfolio {
+  width: 100%;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio {
+  margin-top: 100px;
+  width: 100%;
+  margin-left: -40px;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li {
+  list-style-type: none;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li img {
+  width: 33.3333333%;
+  height: 300px;
+  float: left;
+  position: relative;
+}
+.wrapper main .portfolio .group-portfolio .first-line-portfolio li img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio {
+  width: 100%;
+  margin-left: -40px;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li {
+  list-style-type: none;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li img {
+  width: 33.3333333%;
+  height: 300px;
+  float: left;
+}
+.wrapper main .portfolio .group-portfolio .second-line-portfolio li img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.wrapper main .portfolio .group-portfolio .portfolio-details {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #303030;
+  display: none;
+}
+.wrapper main .portfolio .car-down {
+  color: #F04801;
+  cursor: pointer;
+}
+.wrapper main .clients {
+  text-align: center;
+}
+.wrapper main .clients h1 {
+  margin-top: 60px;
+}
+.wrapper main .clients h1 a {
+  font-size: 1.5em;
+  width: 200px;
+  border-bottom: 1px solid #DE4B19;
+  text-decoration: none;
+  color: black;
+}
+.wrapper main .clients .clients-group {
+  width: 100%;
+}
+.wrapper main .clients .clients-group .first-line-clients {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+}
+.wrapper main .clients .clients-group .first-line-clients img {
+  width: 20%;
+  height: 100px;
+}
+.wrapper main .clients .clients-group .second-line-clients {
+  margin-top: 50px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 200px;
+}
+.wrapper main .clients .clients-group .second-line-clients img {
+  width: 20%;
+  height: 100px;
+}
+.wrapper main .contacts {
+  margin-top: 50px;
+  width: 100%;
+  height: 750px;
+  background: url("../images/contacts-bg.png") no-repeat;
+  background-size: 100% 100%;
+  padding-top: 40px;
+  text-align: center;
+}
+.wrapper main .contacts h1 {
+  margin-top: 60px;
+}
+.wrapper main .contacts h1 a {
+  font-size: 1.5em;
+  width: 200px;
+  border-bottom: 1px solid #DE4B19;
+  text-decoration: none;
+  color: white;
+}
+.wrapper main .contacts .form-contacts {
+  display: inline-block;
+  width: 401px;
+  margin-top: 50px;
+  text-align: left;
+}
+.wrapper main .contacts .form-contacts input[type="text"] {
+  width: 401px;
+  height: 30px;
+  border: 1px solid #F04801;
+  background: black;
+  opacity: 0.5;
+  color: white;
+}
+.wrapper main .contacts .form-contacts input[type="email"] {
+  margin-top: 10px;
+  width: 401px;
+  height: 30px;
+  border: 1px solid #F04801;
+  background: black;
+  opacity: 0.5;
+  color: white;
+}
+.wrapper main .contacts .form-contacts ::-webkit-input-placeholder {
+  color: white;
+  font-size: 16px;
+  padding-left: 20px;
+}
+.wrapper main .contacts .form-contacts textarea {
+  margin-top: 30px;
+  resize: none;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #F04801;
+  background: black;
+  opacity: 0.5;
+  color: white;
+}
+.wrapper main .contacts .form-contacts input[type="submit"] {
+  background: #F04801;
+  border: none;
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  color: white;
+  opacity: 0.7;
+  text-shadow: 0px 0px 0px white;
+  margin-top: 10px;
+}
+.wrapper main .contacts .form-contacts input[type="submit"]:hover {
+  background: #AF4011;
+  opacity: 0.9;
+  cursor: pointer;
+}
+.wrapper main .contacts .more-contacts {
+  display: inline-block;
+  width: 400px;
+  vertical-align: top;
+  margin: 20px 70px;
+  color: white;
+  line-height: 30px;
+  text-align: left;
+}
+.wrapper main .contacts .more-contacts .list-contacts {
+  list-style-type: none;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-email {
+  margin-top: 60px;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-email i {
+  float: left;
+  line-height: 30px;
+  margin-right: 60px;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-tel {
+  margin-top: 60px;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-tel i {
+  float: left;
+  line-height: 30px;
+  margin-right: 65px;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-skype {
+  margin-top: 60px;
+}
+.wrapper main .contacts .more-contacts .list-contacts .my-skype i {
+  float: left;
+  line-height: 30px;
+  margin-right: 65px;
+  color: white;
+}
+.wrapper footer {
+  clear: both;
+  height: 80px;
+  width: 100%;
+  background: #F04801;
+  line-height: 50px;
+  text-align: center;
+}
+.wrapper footer .share {
+  padding-top: 20px;
+  width: 100%;
+}
+.wrapper footer .share a {
+  display: inline-block;
+  color: white;
+  font-size: 25px;
+  margin-left: 10%;
+}
+.wrapper footer .share a span {
+  margin-top: -5px;
+}
+.wrapper footer .share a i {
+  display: inline-block;
+  margin-top: -10px;
+}
+.wrapper footer .share a:first-child {
+  margin-left: 0;
+}
+.wrapper footer .share a:hover {
+  opacity: 0.5;
+}
+/*----------------------media width 1280px -----------------*/
+@media screen and (max-width: 1280px) {
+  .wrapper main .about-me .about-text {
+    display: inline-block;
+    margin: 0 auto;
+    width: 300px;
+  }
+  .wrapper main .about-me .about-img {
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+  }
+  .wrapper .contacts {
+    min-height: 1100px;
+  }
+  .wrapper .contacts .form-contacts {
+    display: block;
+    margin: 0 20%;
+  }
+  .wrapper .contacts .more-contacts {
+    display: block;
+  }
+}

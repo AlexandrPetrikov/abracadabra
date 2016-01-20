@@ -1,0 +1,324 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic);
+/* -------------------general---------------------------- */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+/* ----------------------header------------------------- */
+header {
+  display: block;
+  width: 1420px;
+  height: 420px;
+  background: url("../images/head-bg.png") no-repeat;
+  background-size: 1420px 420px;
+  color: white;
+}
+header .top-menu .logo {
+  display: inline-block;
+  height: 70px;
+  width: 250px;
+  margin-left: 150px;
+  margin-top: 55px;
+  text-decoration: none;
+}
+header .top-menu .logo a {
+  text-decoration: none;
+}
+header .top-menu .logo a h1 {
+  color: white;
+  font-size: 50px;
+  font-weight: normal;
+  display: block;
+  letter-spacing: -2px;
+}
+header .top-menu .global-menu {
+  display: inline-block;
+  width: 600px;
+  margin-left: 170px;
+  margin-top: 10px;
+  font-size: 13px;
+  height: 30px;
+  vertical-align: 10px;
+  font-family: monospace;
+}
+header .top-menu .global-menu ul {
+  list-style-type: none;
+}
+header .top-menu .global-menu ul li {
+  display: inline-block;
+  margin-left: 50px;
+}
+header .top-menu .global-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+header .top-menu #index-lang {
+  display: inline-block;
+  vertical-align: 10px;
+  height: 20px;
+  margin-left: 40px;
+  width: 60px;
+  background: none;
+  border: 1px solid #544949;
+}
+header .site-menu {
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 150px;
+  font-size: 15px;
+  height: 45px;
+  width: 1240px;
+  font-family: monospace;
+}
+header .site-menu ul {
+  display: inline-block;
+  list-style-type: none;
+  height: 45px;
+  background: white;
+  margin-top: 2px;
+}
+header .site-menu ul li {
+  display: inline-block;
+  margin-left: -10px;
+}
+header .site-menu ul li:first-child {
+  margin-left: -40px;
+}
+header .site-menu ul li:first-child a {
+  padding-right: 50px;
+  padding-left: 35px;
+}
+header .site-menu ul li:nth-child(6) a {
+  padding: 16px 30px;
+}
+header .site-menu ul li:last-child {
+  margin-left: -10px;
+  background: -webkit-linear-gradient(top, #52a728, #745d1e);
+}
+header .site-menu ul li:last-child a {
+  padding: 15px 60px;
+  padding-bottom: 12px;
+  color: white;
+  border: 1px solid white;
+}
+header .site-menu ul li:last-child a span {
+  margin-top: -10px;
+  color: #93a765;
+  height: 20px;
+}
+header .site-menu ul li:last-child a span i {
+  padding-left: 0;
+}
+header .site-menu ul li a {
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #6d6e71;
+  padding: 16px 15px;
+}
+header .site-menu ul li a i {
+  padding-left: 10px;
+}
+header .slogan {
+  width: 830px;
+  height: 235px;
+}
+header .slogan .first-line {
+  display: inline-block;
+  margin-left: 180px;
+  margin-top: 80px;
+  font-size: 55px;
+}
+header .slogan .two-line {
+  display: inline-block;
+  margin-left: 300px;
+  margin-top: -25px;
+  font-size: 55px;
+}
+header .slogan .three-line {
+  display: inline-block;
+  margin-left: 370px;
+  margin-top: -15px;
+  font-size: 55px;
+}
+.content {
+  min-width: 1420px;
+  display: block;
+}
+.content .left-column {
+  float: left;
+  width: 830px;
+  height: 550px;
+}
+.content .left-column .img-bootle {
+  float: left;
+  width: 380px;
+  height: 100%;
+  position: relative;
+}
+.content .left-column .img-bootle span {
+  position: absolute;
+  top: -70px;
+  left: 90px;
+  width: 250px;
+  height: 400px;
+  background: url("http://localhost/manure/images/bootle2.png") no-repeat;
+  background-size: 100% 100%;
+}
+.content .left-column .info-price {
+  display: inline-block;
+  width: 450px;
+}
+.content .left-column .info-price .mini-info {
+  display: inline-block;
+  width: 420px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.content .left-column .info-price .mini-info i {
+  float: left;
+  color: #fba740;
+}
+.content .left-column .info-price .mini-info h1 {
+  color: #4d4545;
+  font-size: 30px;
+  margin-left: 50px;
+}
+.content .left-column .info-price .mini-info small {
+  color: #a7a9ac;
+  margin-left: 50px;
+}
+.content .left-column .info-price .mini-info span {
+  color: #c49a6c;
+  margin-left: 50px;
+  font-size: 30px;
+}
+.content .left-column .info-price .more-info {
+  margin-top: 40px;
+}
+.content .left-column .info-price .more-info h1 {
+  font-size: 40px;
+  color: #25383f;
+}
+.content .left-column .info-price .more-info ul {
+  margin-top: 30px;
+  list-style: none;
+}
+.content .left-column .info-price .more-info ul li {
+  margin-left: -30px;
+}
+.content .left-column .info-price .more-info ul li a {
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 25px;
+  text-decoration: none;
+  color: #000000;
+  border: 5px solid black;
+  padding: 10px 30px;
+}
+.content .right-column {
+  display: inline-block;
+  background: url("http://localhost/manure/images/corn.png") no-repeat;
+  background-size: 100% 100%;
+  width: 590px;
+  height: 550px;
+  position: relative;
+}
+.content .right-column .font-calc {
+  position: absolute;
+  top: -170px;
+  left: 80px;
+  background: #e9e5e4;
+  width: 350px;
+  height: 590px;
+}
+.content .right-column .font-calc .calc {
+  margin-left: 15px;
+  margin-top: 10px;
+  height: 560px;
+  width: 320px;
+  background: #efefef;
+  border: 2px dashed #a7a9ac;
+  color: #25383f;
+}
+.content .right-column .font-calc .calc .calculate {
+  display: block;
+  font-size: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.content .right-column .font-calc .calc .profit {
+  display: block;
+  font-size: 30px;
+  margin-left: 75px;
+}
+.content .right-column .font-calc .calc .argum {
+  display: block;
+  margin-left: 20px;
+}
+.content .right-column .font-calc .calc form {
+  color: #25383f;
+  margin-top: 25px;
+}
+.content .right-column .font-calc .calc form label {
+  margin-left: 20px;
+}
+.content .right-column .font-calc .calc form input {
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 270px;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #d1d3d4;
+  padding-left: 10px;
+}
+.content .right-column .font-calc .calc form ::-webkit-input-placeholder {
+  color: #a7a9ac;
+}
+footer {
+  min-width: 1420px;
+  height: 300px;
+  background: black;
+}
+/* .contents{
+	display:inline-block;
+	background: green;
+	
+	.info{
+		display:inline-block;
+		width:825px;
+		height:550px;
+			.first-column{
+				width:410px;
+				background: red;
+				.bootle{
+				width:180px;
+				height:300px;
+				background:url("http://localhost/manure/images/bootle2.png") no-repeat;
+				background-size:180px 300px;
+			}
+			}
+	}
+	.calculate{
+		display:inline-block;
+		height:550px;
+		width:590px;
+		background: url("http://localhost/manure/images/corn.png") no-repeat;
+		background-size:550px 590px;
+	}
+}
+footer{
+	margin-top:5px;
+	display:inline-block;
+	background:black;
+	width:1420px;
+	height:100px;
+} */

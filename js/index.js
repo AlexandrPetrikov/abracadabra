@@ -5,7 +5,8 @@ $(function(){
 
 });
 $(document).ready(function(){
-
+    var str = "asdas230nya";
+    console.log(!!str.match(/[0-9]{1}/gi));
     /* code for block popup */
    setTimeout(function(){
         $('#popup, #popup-overlay').fadeIn(100);

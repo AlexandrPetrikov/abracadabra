@@ -1,0 +1,329 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic);
+/* -------------------general---------------------------- */
+body,h1,h2,h3,h4,h5,h6{
+	margin:0;
+	padding:0;
+	font-family:"Roboto";
+	
+}
+/* ----------------------header------------------------- */
+header{
+	display:block;
+	width:1420px;
+	height:420px;
+	background:url("../images/head-bg.png") no-repeat;
+	background-size:1420px 420px;
+	color:white;
+		.top-menu{
+			.logo{
+				display:inline-block;
+				height:70px;
+				width:250px;
+				margin-left:150px;
+				margin-top:55px;
+				text-decoration:none;
+					a{
+						text-decoration:none;
+						h1{
+							color:white;
+							font-size:50px;
+							font-weight:normal;
+							display:block;
+							letter-spacing:-2px;
+						}
+					}
+			}
+			.global-menu{
+				display:inline-block;
+				width:600px;
+				margin-left:170px;
+				margin-top:10px;
+				font-size:13px;
+				height:30px;
+				vertical-align:10px;
+				font-family:monospace;
+					ul{
+						list-style-type:none;	
+							li{
+								display:inline-block;
+								margin-left:50px;
+									a{
+										text-decoration:none;
+										color:white;
+									}
+							}
+					}
+			}
+			#index-lang{
+				display:inline-block;
+				vertical-align:10px;
+				height:20px;
+				margin-left:40px;
+				width:60px;
+				background:none;
+				border:1px solid #544949;
+			}
+		}
+		.site-menu{
+			display:inline-block;
+			margin-top:10px;
+			margin-left:150px;
+			font-size:15px;
+			height:45px;
+			width:1240px;
+			font-family:monospace;
+			ul{
+				display:inline-block;
+				list-style-type:none;
+				height:45px;
+				background:white;
+				margin-top:2px;
+				li{
+					display:inline-block;
+					margin-left:-10px;
+						&:first-child{
+							margin-left:-40px;
+								a{
+									padding-right:50px;
+									padding-left:35px;
+								}
+						}
+						&:nth-child(6){
+							a{
+								padding:16px 30px;
+							}
+						}
+						&:last-child{
+							margin-left:-10px;
+							background:-webkit-linear-gradient(top,rgb(82,167,40),rgb(116,93,30));
+								a{
+									padding:15px 60px;
+									padding-bottom:12px;
+									color:white;
+									border:1px solid white;
+										span{
+											margin-top:-10px;
+											color:rgb(147,167,101);
+											height:20px;
+												i{
+													padding-left:0;
+												}
+									
+										}
+								}
+						}
+						a{	
+							display:block;
+							text-decoration:none;
+							font-weight:bold;
+							color:rgb(109,110,113);
+							padding:16px 15px;
+								i{
+									padding-left:10px;
+								}
+						}
+				}
+			}
+		}
+		.slogan{
+			width:830px;
+			height:235px;
+				.first-line{
+					display:inline-block;
+					margin-left:180px;
+					margin-top:80px;
+					font-size:55px;
+				}
+				.two-line{
+					display:inline-block;
+					margin-left:300px;
+					margin-top:-25px;
+					font-size:55px;	
+				}
+				.three-line{
+					display:inline-block;
+					margin-left:370px;
+					margin-top:-15px;
+					font-size:55px;		
+				}
+		}
+}
+.content{
+	min-width:1420px;
+	display:block;
+	.left-column{
+		float:left;
+		width:830px;
+		height:550px;
+			.img-bootle{
+				float:left;
+				width:380px;
+				height:100%;
+				position:relative;
+					span{
+						position:absolute;
+						top:-70px;
+						left:90px;
+						width:250px;
+						height:400px;
+						background:url("../images/bootle2.png") no-repeat;
+						background-size:100% 100%;
+					}
+			}
+			.info-price{
+				display:inline-block;
+				width:450px;
+					.mini-info{
+						display:inline-block;
+						width:420px;
+						margin-left:10px;
+						margin-top:15px;
+							i{
+								float:left;
+								color:rgb(251,167,64);
+							}
+							h1{
+								color:rgb(77,69,69);
+								font-size:30px;
+								margin-left:50px;
+							}
+							small{
+								color:rgb(167,169,172);
+								margin-left:50px;
+							}
+							span{
+								color:rgb(196,154,108);
+								margin-left:50px;
+								font-size:30px;
+							}
+					}
+					.more-info{
+						margin-top:40px;
+							h1{
+								font-size:40px;
+								color:rgb(37,56,63);
+							}
+							ul{
+								margin-top:30px;
+								list-style:none;
+								li{
+									margin-left:-30px;
+									a{
+										font-family:Roboto;
+										font-weight:bold;
+										font-size:25px;
+										text-decoration:none;
+										color:rgb(0,0,0);
+										border:5px solid black;
+										padding:10px 30px;
+									}
+								}	
+							}
+					}
+			}
+	}
+	.right-column{
+		display:inline-block;
+		background:url("../manure/images/corn.png") no-repeat;
+		background-size:100% 100%;
+		width:590px;
+		height:550px;
+		position:relative;
+			.font-calc{
+				position:absolute;
+				top:-170px;
+				left:80px;
+				background:rgb(233,229,228);
+				width:350px;
+				height:590px;
+					.calc{
+						margin-left:15px;
+						margin-top:10px;
+						height:560px;
+						width:320px;
+						background:rgb(239,239,239);
+						border:2px dashed rgb(167,169,172);
+						color:rgb(37,56,63);
+
+							.calculate{
+								display:block;
+								font-size:30px;
+								margin-left:50px;
+								margin-top:20px;
+							}
+							.profit{
+								display:block;
+								font-size:30px;
+								margin-left:75px;
+							}
+							.argum{
+								display:block;
+								margin-left:20px;
+							}
+								form{
+									color:rgb(37,56,63);
+									margin-top:25px;
+									label{
+										margin-left:20px;
+									}
+									input{
+										margin-left:20px;
+										margin-top:5px;
+										margin-bottom:20px;
+										width:270px;
+										height:30px;
+										border-radius:5px;
+										border:1px solid rgb(209,211,212);
+										padding-left:10px;
+										
+									}
+									::-webkit-input-placeholder{
+											color:rgb(167,169,172);
+										}
+								}
+								
+					}
+			}
+
+	}
+}
+footer{
+	min-width:1420px;
+	height:300px;
+	background:black;
+}
+
+/* .contents{
+	display:inline-block;
+	background: green;
+	
+	.info{
+		display:inline-block;
+		width:825px;
+		height:550px;
+			.first-column{
+				width:410px;
+				background: red;
+				.bootle{
+				width:180px;
+				height:300px;
+				background:url("http://localhost/manure/images/bootle2.png") no-repeat;
+				background-size:180px 300px;
+			}
+			}
+	}
+	.calculate{
+		display:inline-block;
+		height:550px;
+		width:590px;
+		background: url("http://localhost/manure/images/corn.png") no-repeat;
+		background-size:550px 590px;
+	}
+}
+footer{
+	margin-top:5px;
+	display:inline-block;
+	background:black;
+	width:1420px;
+	height:100px;
+} */
