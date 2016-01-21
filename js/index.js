@@ -1,19 +1,18 @@
-$(function(){
-
+$(document).ready(function(){
+    /* Load DOM elements through ajax*/
     $('header').load('header.html');
     $('footer').load('footer.html').css('bottom',0);
+    $("aside").load('aside.html');
 
-});
-$(document).ready(function(){
     var str = "asdas230nya";
     console.log(!!str.match(/[0-9]{1}/gi));
     /* code for block popup */
-   setTimeout(function(){
+   /*setTimeout(function(){
         $('#popup, #popup-overlay').fadeIn(100);
     },2000);
     $('#popup-overlay, #close-popup').click(function(){
         $('#popup, #popup-overlay').fadeOut(100);
-    });
+    });*/
     /*-----------------------------------------*/
 
     /* code for slider */

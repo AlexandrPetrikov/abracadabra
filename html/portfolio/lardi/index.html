@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Lardi</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.maskedinput-1.2.2.js"></script>
+	<script src="js/index.js"></script>
+	<link rel="stylesheet/less" href="css/style.less">
+	<script src="js/less.js"></script>
+</head>
+<body>
+<div class="wrapper">
+	<!-- start header -->
+	<header>
+		<div class="links">
+			<a href="#">Грузы и транспорт </a>|
+			<a href="#">Автомаркет </a>|
+			<a href="#">Транс-блог </a>|
+			<a href="#">API</a>
+		</div>
+		<div class="enter-site">
+			<a href="#">Вход </a>|
+			<a href="#">Регистрация</a>
+		</div>
+		<select class="language" id="language">
+			<option value="ru">RU</option>
+			<option value="en">EN</option>
+			<option value="ua">UA</option>
+		</select>
+	</header>
+	<!-- end header -->
+	
+
+	<!-- start nav -->
+	<nav>
+			<div class="logo">
+				<img src="images/logo.svg" alt="site logo">
+			</div>
+			<p>Регистрация</p>
+		<ul>
+			<li><a href="#">Физическим лицам</a></li>
+			<li><a href="#">Предпринимателям</a></li>
+			<li><a href="#">Юридическим лицам</a></li>
+		</ul>
+	</nav>
+	<!-- end nav -->
+
+
+	<!-- start main -->
+	<main>
+		<!-- start left column -->
+		<div class="left-column" id="left-column">
+			<label class="warn-info">Объязательными являются все поля!</label>
+			<form action="" id="sign-form">
+			<!-- start block user-->
+				<div class="block-user">
+					<div class="hint-left">
+						<p>Объязательно!</p>
+					</div>
+					<div class="arrow"></div>
+					<div class="hint-right">
+						<p>Поле “Логин” должен содержать буквы латинского алфавита и “.  _  @” и быть от 5 до 20 символов.</p>
+					</div>
+					<img src="images/user1.jpg" class="user-left" id="user-left" alt="">
+					<img src="images/info1.jpg" class="user-right" id="user-right"  alt="">
+					<input type="text" class="nickname" id="nickname" placeholder="Фамилия, Имя (или никнейм)">
+				</div>
+			<!-- end block user-->
+			<!-- start block city-->
+				<div class="block-city">
+					<div class="hint-left">
+						<p>Объязательно!</p> </div>
+					<div class="arrow"></div>
+					<div class="hint-right">
+						<p>Город считается верно заполненым если он есть у нас в списке. Если его нету выберите "Моего города нету в списке"</p>
+					</div>
+					<img src="images/city1.jpg" class="city-left" id="city-left" alt="">
+					<img src="images/info1.jpg" class="city-right" id="city-right" alt="">
+					<input type="text" class="city" id="city" list="city-arr" placeholder="Город проживания">
+				</div>
+			<!-- end block city-->
+			<!-- start block region-->
+				<div class="block-region" id="block-region">
+					<div class="hint-left">
+						<p>Объязательно!</p> </div>
+					<img src="images/region1.jpg" class="region-left" id="region-left" list="region-arr" alt="">
+					<input type="text" class="region" id="region" list="region-arr" placeholder="Выберите область вашего города">
+				</div>
+			<!-- end block region-->
+			<!-- start block tel-->
+				<div class="block-tel">
+					<div class="hint-left">
+						<p>Неверный номер телефона!</p>
+					</div>
+					<div class="arrow"></div>
+					<div class="hint-right">
+						<p>Проверяться   по правилам телефонов для Украины. Операторы 93|63|96|97|99|50|67</p>
+					</div>
+					<img src="images/phone1.jpg" class="phone-left" id="phone-left" alt="">
+					<img src="images/info1.jpg" class="phone-right" id="phone-right" alt="">
+					<input type="tel" class="tel" id="tel" placeholder="+380(__)__-__-___">
+				</div>
+			<!-- end block tel-->
+			<!-- start block email-->
+				<div class="block-email">
+					<div class="hint-left">
+						<p>Объязательно!</p>
+					</div>
+					<div class="arrow"></div>
+					<div class="hint-right">
+						<p>Проверятся согласно правил наименования электронной почты.</p>
+					</div>
+					<img src="images/mail1.jpg" class="mail-left" id="email-left" alt="">
+					<img src="images/info1.jpg" class="mail-right" id="email-right" alt="">
+					<input type="text" class="email" id="email" placeholder="Введите e-mail">
+				</div>
+			<!-- end block email-->
+			<!-- start block password-->
+				<div class="block-password">
+					<div class="hint-left">
+						<p>Объязательно!</p>
+					</div>
+					<div class="arrow"></div>
+					<div class="hint-right">
+						<p>Пароль должен содержать буквы латинского алфавита как минимум одну заглавную и быть от 8 до 20 символов</p>
+					</div>
+					<img src="images/lock1.jpg" class="lock-left" id="lock-left" alt="">
+					<img src="images/info1.jpg" class="lock-right" id="lock-right" alt="">
+					<input type="password" class="password" id="password" placeholder="Укажите пароль">
+					<div class="block-show-pass" id="block-show-pass">
+						<input type="checkbox" id="show-pass" class="show-pass">
+						<label for="show-pass">Показать</label>
+					</div>
+				</div>
+			<!-- end block password-->
+				<div class="true-confident" id="true-confident">
+					<div class="hint-left">
+						<p>Объязательно!</p>
+					</div>
+					<input type="checkbox" id="confident" class="confident"><label>При нажатии на эту кнопку, вы соглашаетесь с нашими:</label>
+					<a href="#">Политика конфидециальности</a>
+					<a href="#">Условия использования.</a>
+				</div>
+				<input type="submit" id="send" value="Зарегистрироваться">
+			</form>
+		</div>
+		<!-- end left column -->
+
+		<!-- start right column -->
+		<div class="right-column" id="right-column">
+			<p class="choose">Или войдите с помощью:</p>
+			<div class="social">
+				<ul>
+					<a href="#"><li class="social-vk"></li></a>
+					<a href="#"><li class="social-fb"></li></a>
+					<a href="#"><li class="social-ok"></li></a>
+					<a href="#"><li class="social-gl"></li></a>
+					<a href="#"><li class="social-tw"></li></a>
+				</ul>
+			</div>
+			<p>С помощью этой регистрации Вы получаете доступ ко всем возможностям и сервисам нашей компании:</p>
+			<a href="#">lardi-market</a>,
+			<a href="#">lardi-logistics</a>,
+			<a href="#">lardi-trackign</a>.
+			<p>Благодарим вас за ваше внимание, и лояльность в отношении нас
+			и наших сотрудников</p>
+			<p>С Уважением, Ваши друзья и партнеры, в лице руководства LARDI</p>
+		</div>
+		<!-- end right column -->
+	</main>
+	<!-- end main -->
+
+	<div class="help-online">
+		<!-- просто картинка -->
+	</div>
+	<!-- start footer -->
+	<footer>
+		<div class="social-footer">
+			<ul>
+				<a href="#"><li class="social-fb"></li></a>
+				<a href="#"><li class="social-in"></li></a>
+				<a href="#"><li class="social-skype"></li></a>
+				<a href="#"><li class="social-yt"></li></a>
+				<a href="#"><li class="social-tw"></li></a>
+			</ul>
+		</div>
+		<label class="footer-info">Copyright Lardi Ltd  &#169;1999-2015</label>
+	</footer>
+				<datalist id="city-arr" name="city-arr">
+				</datalist>
+				<datalist id="region-arr" readonly>
+					<option>Киевская область</option>
+					<option>Харьковская область</option>
+					<option>Николаевская область</option>
+					<option>Луганская область</option>
+					<option>Полтавская область</option>
+					<option>Житомирская область</option>
+					<option>Ужгородская область</option>
+					<option>Черниговская область</option>
+					<option>Херсонская область</option>
+					<option>Львовская область</option>
+				</datalist>
+
+	<!-- end footer -->
+</div>
+</body>
+</html>
