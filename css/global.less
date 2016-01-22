@@ -3,7 +3,7 @@
 html,body{
   margin:0;
   padding:0;
-  background:#464546;
+  background:@color-letter;
 		h1{
 			color:#3B3333;
 		}
@@ -23,20 +23,22 @@ html,body{
     overflow:hidden;
     header{
         display:inline-block;
-        background:url('../images/header-bg.jpg');
-        height:250px;
+        height:300px;
         width:1350px;
         margin:0 auto;
+        position:relative;
         .logo{
             display:inline-block;
             height:100px;
             margin-left:10%;
+            font-family:'Lobster','Georgia';
             a {
                 text-decoration:none;
+                outline:none;
                 h1 {
-                    color:#30AE48;
-                    font-family:'Lobster','Georgia';
-                    text-shadow:0 0 5px black;
+                    color:#30ae48;
+                    letter-spacing:10px;
+                    text-shadow:0 0 2px black;
                     font-size:60px;
                 }
             }
@@ -44,18 +46,18 @@ html,body{
                 text-decoration:none;
                 h2{
                     margin-top:-20px;
-                    font-family:'Lobster','Georgia';
-                    color:#30AE48;
-                    text-shadow:0 0 10px black;
+                    color:#30ae48;
+                    text-shadow:0 0 2px gray;
                 }
             }
         }
         nav{
-            display:inline-block;
+            display:block;
             align-items:center;
             background:#4D504E;
             width:1350px;
-            margin-top:37px;
+            position:absolute;
+            bottom:0;
             height:50px;
             ul{
                 display:inline-block;
@@ -63,18 +65,15 @@ html,body{
                     display:inline-block;
                     margin-left:-5px;
                     a{
-                        text-decoration:line-through;
+                        text-decoration:none;
                         border-bottom:5px ridge @color-letter;
-                        padding:10px 20px 10px 20px;
+                        padding:10px 20px;
                         color:@color-letter;
+                        font-size:18px;
                         &:hover{
                             color:#FFE082;
                             border-top:5px ridge @color-letter;
                         }
-                    }
-                    &:nth-child(4) a,
-                    &:nth-child(1) a{
-                      text-decoration:none;
                     }
                 }
             }
@@ -240,6 +239,14 @@ html,body{
         height:100%;
         margin:-5px auto;
         background:#C7C6C6;
+        .welcome-test{
+          padding:30px;
+          width:900px;
+          font-size:30px;
+          color:#8C8BC8;
+          text-shadow:0 0 1px black;
+          margin-left:30px;
+        }
         article{
               display:inline-block;
               width:200px;
@@ -327,29 +334,17 @@ html,body{
     footer{
         display:inline-block;
         width:1350px;
-        background:rgba(0, 0, 0, 0.92);
+        background:rgb(0, 0, 0);
         height:200px;
         box-shadow:0px -10px 10px black;
         position:absolute;
         bottom:0;
         left:0;
         clear:both;
-        p,
         ul{
+            margin: 150px 500px;
             color:#B08D00;
             list-style-type:none;
-        }
-        .foot-box-group{
-            display:inline-block;
-            .foot-box1{
-                display:inline-block;
-            }
-            .foot-box2{
-                display:inline-block;
-            }
-            .foot-box3{
-                display:inline-block;
-            }
         }
     }
 }

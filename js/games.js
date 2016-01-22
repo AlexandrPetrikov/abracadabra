@@ -6,4 +6,7 @@ $(function() {
     $('footer').load('../../footer.html');
     $('header').load('../../header.html');
     $("aside").load('../../aside.html');
+    setTimeout(function(){
+        $('#link-games').css('color',"gold");
+    },70);
 });

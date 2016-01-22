@@ -6,4 +6,7 @@ $(function(){
     $("header").load("../../header.html");
     $("footer").load("../../footer.html");
     $("aside").load("../../aside.html");
+    setTimeout(function(){
+        $('#link-portfolio').css('color',"gold");
+    },70);
 });
