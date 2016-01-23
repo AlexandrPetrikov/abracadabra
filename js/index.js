@@ -17,27 +17,29 @@ $(document).ready(function(){
 
     /* code for slider */
 	//configurations
-	var width = 1350;
-	var animationSpeed = 400;
-	var pause = 3000;
-	var countSlide = 1;
+
+	var pause = 5000;
 
 	//cache DOM
-	var $slider = $(".slider");
-	var $slideContainer = $slider.find(".sliders");
-	var $sliders = $slideContainer.find(".slide");
-	
+	var $slider = $("#slider");
 	var interval;
-
+    var max = $slider.children().size();
+    console.log(max);
+    var n = 1;
 	function startSlider(){
 		interval = setInterval(function(){
-			$slideContainer.animate({marginLeft:"-="+width},animationSpeed, function(){
-				countSlide++;
-				if (countSlide === $sliders.length) {
-					countSlide = 1;
-					$slideContainer.css("margin-left", 0);
-				};
-			});
+            function showSlide(){
+                if(n == max+1){
+                    n = 1;
+                    $(".slide[data-slide="+n+"]").animate({"opacity":"1"},1500);
+                    $(".slide[data-slide='"+max+"']").animate({"opacity":"0"},1500);
+                }else{
+                    $(".slide[data-slide='"+n+"']").animate({"opacity":"1"},1500);
+                    $(".slide[data-slide='"+(n-1)+"']").animate({"opacity":"0"},1500);
+                };
+                n++;
+            }
+            showSlide();
 		}, pause);
 	}
 	function stopInterval(){
@@ -55,5 +57,4 @@ $(document).ready(function(){
     });
     /*--------------------------------------------------*/
 
-    $("")
 });

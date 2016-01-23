@@ -1,0 +1,537 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 1350px;
+}
+.wrapper {
+  min-height: 100%;
+  position: relative;
+}
+.wrapper header {
+  display: inline-block;
+  background: #000;
+  height: 35px;
+  width: 1350px;
+  line-height: 35px;
+  font-size: 12px;
+}
+.wrapper header .links {
+  margin-left: 315px;
+  display: inline-block;
+  color: white;
+}
+.wrapper header .links a {
+  color: white;
+  text-decoration: none;
+}
+.wrapper header .links a:hover {
+  text-decoration: underline;
+}
+.wrapper header .enter-site {
+  margin-left: 440px;
+  display: inline-block;
+  color: white;
+}
+.wrapper header .enter-site a {
+  color: white;
+  text-decoration: none;
+}
+.wrapper header .enter-site a:hover {
+  text-decoration: underline;
+}
+.wrapper header .language {
+  margin-left: 60px;
+  background: #000;
+  color: white;
+  border-radius: 20px;
+  outline: none;
+}
+.wrapper header .language option {
+  background: #000;
+  color: white;
+}
+.wrapper nav {
+  margin: -15px 300px;
+  width: 960px;
+  height: 280px;
+  padding: 15px;
+  background: white;
+}
+.wrapper nav .logo img {
+  width: 150px;
+  height: 150px;
+}
+.wrapper nav p {
+  display: inline-block;
+  margin-top: 0;
+  color: red;
+  font-size: 30px;
+  font-family: 'monospace';
+  font-weight: bold;
+}
+.wrapper nav ul {
+  display: inline-block;
+}
+.wrapper nav ul li {
+  display: inline-block;
+  list-style-type: none;
+  background: white;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #3eb5f1;
+  margin-left: -5px;
+  text-align: center;
+}
+.wrapper nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #3eb5f1;
+  width: 200px;
+}
+.wrapper nav ul li:first-child {
+  margin-left: 30px;
+  border-radius: 20px 0 0 20px;
+}
+.wrapper nav ul li:last-child {
+  border-radius: 0 20px 20px 0;
+}
+.wrapper nav ul li:hover {
+  background: #3eb5f1;
+  border: 2px solid #3eb5f1;
+}
+.wrapper nav ul li:hover a {
+  color: white;
+}
+.wrapper main {
+  width: 960px;
+  padding: 15px;
+  margin: 15px 300px;
+  min-height: 1000px;
+  background: white;
+}
+.wrapper main .left-column {
+  float: left;
+  display: inline-block;
+  width: 480px;
+}
+.wrapper main .left-column .warn-info {
+  color: red;
+}
+.wrapper main .left-column form input {
+  margin-top: 20px;
+  width: 320px;
+  height: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border: 2px solid #cecece;
+}
+.wrapper main .left-column form img {
+  position: absolute;
+}
+.wrapper main .left-column form .block-user {
+  position: relative;
+}
+.wrapper main .left-column form .block-user .user-left {
+  width: 30px;
+  top: 30px;
+  left: 7px;
+}
+.wrapper main .left-column form .block-user .user-right {
+  width: 25px;
+  top: 32px;
+  left: 370px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .block-user .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-user .hint-right {
+  position: absolute;
+  left: -9999px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+.wrapper main .left-column form .block-user .arrow {
+  z-index: 100;
+  position: absolute;
+  left: -9999px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #CFCFCF;
+  border-bottom: 10px solid transparent;
+}
+.wrapper main .left-column form .block-city {
+  position: relative;
+}
+.wrapper main .left-column form .block-city .city-left {
+  width: 25px;
+  top: 25px;
+  left: 10px;
+}
+.wrapper main .left-column form .block-city input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.wrapper main .left-column form .block-city .city-right {
+  width: 25px;
+  top: 30px;
+  left: 370px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .block-city .arrow {
+  z-index: 100;
+  position: absolute;
+  left: -9999px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #CFCFCF;
+  border-bottom: 10px solid transparent;
+}
+.wrapper main .left-column form .block-city .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-city .hint-right {
+  position: absolute;
+  left: -9999px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+.wrapper main .left-column form .block-region {
+  display: none;
+  position: relative;
+}
+.wrapper main .left-column form .block-region .region-left {
+  width: 25px;
+  top: 30px;
+  left: 10px;
+}
+.wrapper main .left-column form .block-region input {
+  padding-right: 10px;
+  width: 350px;
+}
+.wrapper main .left-column form .block-region .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-tel {
+  position: relative;
+}
+.wrapper main .left-column form .block-tel .phone-left {
+  width: 18px;
+  top: 30px;
+  left: 14px;
+}
+.wrapper main .left-column form .block-tel .phone-right {
+  width: 25px;
+  top: 30px;
+  left: 370px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .block-tel .arrow {
+  z-index: 100;
+  position: absolute;
+  left: -9999px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #CFCFCF;
+  border-bottom: 10px solid transparent;
+}
+.wrapper main .left-column form .block-tel .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-tel .hint-right {
+  position: absolute;
+  left: -9999px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+.wrapper main .left-column form .block-email {
+  position: relative;
+}
+.wrapper main .left-column form .block-email .mail-left {
+  width: 25px;
+  top: 30px;
+  left: 8px;
+  height: 20px;
+}
+.wrapper main .left-column form .block-email .mail-right {
+  width: 25px;
+  top: 30px;
+  left: 370px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .block-email .arrow {
+  z-index: 100;
+  position: absolute;
+  left: -9999px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #CFCFCF;
+  border-bottom: 10px solid transparent;
+}
+.wrapper main .left-column form .block-email .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-email .hint-right {
+  position: absolute;
+  left: -9999px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+.wrapper main .left-column form .block-password {
+  position: relative;
+}
+.wrapper main .left-column form .block-password .lock-left {
+  width: 25px;
+  top: 26px;
+  left: 7px;
+}
+.wrapper main .left-column form .block-password input {
+  padding-right: 100px;
+  width: 260px;
+}
+.wrapper main .left-column form .block-password .lock-right {
+  width: 25px;
+  top: 30px;
+  left: 370px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .block-password .arrow {
+  z-index: 100;
+  position: absolute;
+  left: -9999px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #CFCFCF;
+  border-bottom: 10px solid transparent;
+}
+.wrapper main .left-column form .block-password .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .block-password .hint-right {
+  position: absolute;
+  left: -9999px;
+  font-size: 12px;
+  width: 100px;
+  padding: 5px;
+  background: white;
+  box-shadow: 0px 0px 5px gray;
+}
+.wrapper main .left-column form .block-password .block-show-pass {
+  display: none;
+}
+.wrapper main .left-column form .block-password .block-show-pass .show-pass {
+  position: absolute;
+  left: 315px;
+  top: 5px;
+  width: 14px;
+}
+.wrapper main .left-column form .block-password .block-show-pass label {
+  position: absolute;
+  top: 38px;
+  left: 340px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.wrapper main .left-column form .true-confident {
+  position: relative;
+}
+.wrapper main .left-column form .true-confident .hint-left {
+  position: absolute;
+  left: -9999px;
+  color: red;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: underline;
+  background: white;
+  box-shadow: 0 0 1px black;
+  padding: 0 15px;
+}
+.wrapper main .left-column form .true-confident .confident {
+  width: 15px;
+  height: 15px;
+  outline: none;
+  margin-top: 70px;
+}
+.wrapper main .left-column form .true-confident label {
+  display: inline-block;
+  width: 400px;
+}
+.wrapper main .left-column form .true-confident a {
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+.wrapper main .left-column form input[type='submit'] {
+  background: #3eb5f1;
+  border: 1px solid #3eb5f1;
+  border-radius: 30px;
+  color: white;
+  padding: 0;
+  outline: none;
+  margin-top: 40px;
+  width: 250px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.wrapper main .right-column {
+  float: left;
+  width: 440px;
+  display: inline-block;
+  margin-top: 30px;
+  color: gray;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+.wrapper main .right-column .choose {
+  float: left;
+  height: 35px;
+  width: 110px;
+}
+.wrapper main .right-column .social {
+  display: inline-block;
+  float: left;
+  width: 330px;
+}
+.wrapper main .right-column .social ul {
+  display: inline-block;
+}
+.wrapper main .right-column .social ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 100%;
+}
+.wrapper main .right-column .social ul .social-vk {
+  background: url("../images/social-icons.png") 315px 245px;
+}
+.wrapper main .right-column .social ul .social-fb {
+  background: url("../images/social-icons.png") 355px 245px;
+}
+.wrapper main .right-column .social ul .social-ok {
+  background: url("../images/social-icons.png") 235px 245px;
+}
+.wrapper main .right-column .social ul .social-gl {
+  background: url("../images/social-icons.png") 355px 205px;
+}
+.wrapper main .right-column .social ul .social-tw {
+  background: url("../images/social-icons.png") 195px 245px;
+}
+.wrapper main .right-column p {
+  display: inline-block;
+  margin-top: 15px;
+}
+.wrapper main .right-column a {
+  color: blue;
+}
+.wrapper .help-online {
+  position: absolute;
+  width: 255px;
+  height: 40px;
+  background: url("../images/help-online.jpg") no-repeat;
+  top: 1000px;
+}
+.wrapper footer {
+  background: #e4eff7;
+  width: 1315px;
+  margin: -15px 0;
+  padding: 15px;
+  clear: both;
+  position: absolute;
+  bottom: 0;
+}
+.wrapper footer .social-footer {
+  display: inline-block;
+  width: 330px;
+  height: 100px;
+  line-height: 100px;
+  margin-left: 270px;
+}
+.wrapper footer .social-footer ul {
+  display: inline-block;
+}
+.wrapper footer .social-footer ul li {
+  display: inline-block;
+  list-style-type: none;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  border-radius: 100%;
+}
+.wrapper footer .social-footer ul .social-fb {
+  background: url("../images/social-icons.png") 355px 245px;
+}
+.wrapper footer .social-footer ul .social-in {
+  background: url("../images/social-icons.png") 195px 205px;
+}
+.wrapper footer .social-footer ul .social-skype {
+  background: url("../images/social-icons.png") 75px 245px;
+}
+.wrapper footer .social-footer ul .social-yt {
+  background: url("../images/social-icons.png") 115px 245px;
+}
+.wrapper footer .social-footer ul .social-tw {
+  background: url("../images/social-icons.png") 195px 245px;
+}
+.wrapper footer .footer-info {
+  color: gray;
+  font-weight: bold;
+  margin-left: 180px;
+}

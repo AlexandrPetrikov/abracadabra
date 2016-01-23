@@ -1,0 +1,79 @@
+.wrapper header nav {
+  margin-top: 100px;
+}
+.wrapper main aside {
+  min-height: 2270px;
+}
+.wrapper main section.content {
+  min-height: 2270px;
+}
+.wrapper main section.content .site-links {
+  padding: 7px;
+  display: inline-block;
+  width: 100%;
+  list-style-type: none;
+}
+.wrapper main section.content .site-links .about-site {
+  position: relative;
+  width: 320px;
+  height: 250px;
+  float: left;
+  margin: 5px;
+  background: white;
+}
+.wrapper main section.content .site-links .about-site:hover .current-info {
+  left: 0;
+}
+.wrapper main section.content .site-links .about-site img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.wrapper main section.content .site-links .about-site .lardi {
+  width: 220px;
+  margin-left: 40px;
+}
+.wrapper main section.content .site-links .about-site .brandmedia {
+  height: 100px;
+  margin-top: 70px;
+}
+.wrapper main section.content .site-links .about-site .mood-web {
+  height: 150px;
+  margin-top: 20px;
+}
+.wrapper main section.content .site-links .about-site .manure {
+  width: 150px;
+  height: 200px;
+  margin: 30px 80px;
+}
+.wrapper main section.content .site-links .about-site .current-info {
+  position: absolute;
+  top: 0;
+  left: -9999px;
+  background: rgba(0, 0, 0, 0.9);
+  width: 280px;
+  height: 210px;
+  padding: 20px;
+}
+.wrapper main section.content .site-links .about-site .current-info .technologies span {
+  color: red;
+}
+.wrapper main section.content .site-links .about-site .current-info .technologies .used {
+  color: green;
+}
+.wrapper main section.content .site-links .about-site .current-info a {
+  display: inline-block;
+  border: 2px solid black;
+  color: black;
+  position: absolute;
+  text-decoration: none;
+  background: rgba(46, 45, 46, 0.8);
+  border-radius: 100px;
+  top: 180px;
+  margin-left: 80px;
+  padding: 10px 20px;
+}
+.wrapper main section.content .site-links .about-site .current-info a:hover {
+  color: gold;
+}

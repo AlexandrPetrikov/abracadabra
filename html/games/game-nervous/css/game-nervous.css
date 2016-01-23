@@ -1,97 +1,134 @@
-.game-block{
-	width:1000px;
-	height:500px;
-	background: #D6CACA;
-	display:inline-block;
-	float:left;
-	position:relative;
-	border:2px solid black;
+main .info {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background: chocolate;
+  width: 100%;
+  height: 60px;
+  display: none;
+  border: 1px solid black;
 }
-.prime{
-    border-radius:100%;
-	width:100px;
-	height:100px;
-	background: #3D4B82;
-	position:absolute;
-	left:0;
-	top:0;
-	border:0;
-	z-index:100;
+main .info .score-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
 }
-.panel-control{
-	display:inline-block;
-	float:left;
-	width:300px;
-	height:500px;
-	background: #95585A;
-	position:relative;
+main .info .score-info meter {
+  width: 200px;
+  height: 20px;
 }
-.panel-control button{
-	position:absolute;
-	width:50px;
-	height:50px;
-	outline:none;
-	border:none;
+main .info .score-info .score-number {
+  position: absolute;
+  left: 80px;
+  top: 1px;
 }
-button[class=center]{
-	background: #8C8BC8;
-	top:70px;
-	left:100px;
-	z-index:100;
+main .game-block {
+  width: 1350px;
+  height: 700px;
+  background: url('../images/begin-game-bg.jpg') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  float: left;
+  position: relative;
+  border: 2px solid black;
+  overflow: hidden;
 }
-button[class=top]{
-	background: #8C8BC8;
-	top:20px;
-	left:100px;
-	box-shadow:0 0 20px black;
+main .game-block .game-block-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
 }
-button[class=right]{
-	background: #8C8BC8;
-	top:70px;
-	left:150px;
-	box-shadow:0 0 20px black;
+main .game-block .gender {
+  position: absolute;
+  top: -150px;
+  left: 300px;
 }
-button[class=bottom]{
-	background: #8C8BC8;
-	top:120px;
-	left:100px;
-	box-shadow:0 0 20px black;
+main .game-block .gender .gender-choose {
+  height: 100px;
+  width: 100px;
+  background: white;
+  display: inline-block;
+  cursor: pointer;
 }
-button[class=left]{
-	background: #8C8BC8;
-	top:70px;
-	left:50px;
-	box-shadow:0 0 20px black;
+main .game-block .gender .male {
+  background: url('../images/gender-choose-bg.jpg') no-repeat;
 }
-.score{
-	position:absolute;
-	top:300px;
-	left:40px;
+main .game-block .gender .male:hover {
+  background: url('../images/gender-choose-bg.jpg') no-repeat -100px 0;
 }
-.score::selection{
-	color:white;
-	background:black;
+main .game-block .gender .female {
+  margin-left: 550px;
+  background: url('../images/gender-choose-bg.jpg') no-repeat 0 -100px;
 }
-.target{
-    border-radius:100%;
-	background: #000;
-	display:inline-block;
-	position:relative;
-	top: 5px;
-	left: 5px;
-	width:10px;
-	height:10px;
+main .game-block .gender .female:hover {
+  background: url('../images/gender-choose-bg.jpg') no-repeat -100px -100px;
 }
-.codes{
-	position:absolute;
-	width:120px;
-	height:120px;
-	top:350px;
-	left:75px;
-	-webkit-filter:grayscale(100%);
-	transition:2s;
+main .game-block .gender input[type=radio] {
+  width: 20px;
+  height: 20px;
+  position: absolute;
 }
-.codes:hover{
-	-webkit-filter:none;
-	cursor:pointer;
+main .game-block .gender .choose-male {
+  top: 120px;
+  left: 35px;
+}
+main .game-block .gender .choose-female {
+  top: 120px;
+  left: 695px;
+}
+main .game-block .game-menu {
+  position: absolute;
+  z-index: 100;
+  color: white;
+  top: 400px;
+  left: 550px;
+}
+main .game-block .game-menu .first-game-menu {
+  list-style-type: none;
+}
+main .game-block .game-menu .first-game-menu li {
+  width: 300px;
+  text-align: center;
+  margin-left: -40px;
+  cursor: pointer;
+  height: 50px;
+  border: 1px solid black;
+  line-height: 50px;
+}
+main .game-block .game-menu .second-game-menu {
+  list-style-type: none;
+  display: none;
+  height: 0;
+  overflow: hidden;
+}
+main .game-block .game-menu .second-game-menu li {
+  width: 300px;
+  text-align: center;
+  margin-left: -40px;
+  cursor: pointer;
+  border: 1px solid black;
+  height: 50px;
+  line-height: 50px;
+}
+main .game-block .killer {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background: #3D4B82;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 0;
+  z-index: 100;
+}
+main .game-block .target {
+  border-radius: 100%;
+  background: #000;
+  display: none;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
 }
