@@ -1,18 +1,22 @@
 .wrapper main section.content {
-  width: 960px;
-  padding: 20px;
+  position: relative;
 }
 .wrapper main section.content .my-photo {
   width: 100px;
   height: 100px;
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 30px;
+  margin: 30px 100px 40px;
+}
+.wrapper main section.content .initials {
+  position: absolute;
+  left: 250px;
+  top: 110px;
 }
 .wrapper main section.content .my-technologies {
   background: aliceblue;
   display: block;
-  width: 100%;
+  width: 500px;
+  margin-left: 30px;
   height: 400px;
   position: relative;
   padding-left: 15px;
@@ -32,7 +36,6 @@
   text-shadow: 2px 2px 1px black;
 }
 .wrapper main section.content .my-technologies .first-line li meter {
-  color: red;
   float: right;
   box-shadow: 3px 3px 3px black;
 }
@@ -44,6 +47,7 @@
   margin-left: 5px;
   float: left;
   height: 350px;
+  display: none;
 }
 .wrapper main section.content .my-technologies .second-line li {
   height: 40px;
