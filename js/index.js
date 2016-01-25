@@ -18,34 +18,68 @@ $(document).ready(function(){
     /* code for slider */
 	//configurations
 
-	var pause = 5000;
+	var pause = 4000;
 
 	//cache DOM
-	var $slider = $("#slider");
+	var $sliders = $("#sliders");
 	var interval;
-    var max = $slider.children().size();
-    console.log(max);
-    var n = 1;
+    var max = $sliders.children().size()-1;
+    var n = $(".showSlide").index();
 	function startSlider(){
 		interval = setInterval(function(){
             function showSlide(){
-                if(n == max+1){
-                    n = 1;
-                    $(".slide[data-slide="+n+"]").animate({"opacity":"1"},1500);
-                    $(".slide[data-slide='"+max+"']").animate({"opacity":"0"},1500);
+                if(n == max){
+                    n = 0;
+                    $sliders.children().eq(n).animate({"opacity":1},400);
+                    $sliders.children().eq(max).animate({"opacity":0},400);
                 }else{
-                    $(".slide[data-slide='"+n+"']").animate({"opacity":"1"},1500);
-                    $(".slide[data-slide='"+(n-1)+"']").animate({"opacity":"0"},1500);
-                };
-                n++;
+                    $sliders.children().eq(n).animate({"opacity":0},400);
+                    $sliders.children().eq(n+1).animate({"opacity":1},400);
+                    n++;
+                }
             }
             showSlide();
 		}, pause);
 	}
+    $("#right-carret").on('click',function(){
+        clearInterval(interval);
+        if(n == max){
+            n = 0;
+            $sliders.children().eq(n).animate({"opacity":1},600);
+            $sliders.children().eq(max).animate({"opacity":0},600);
+        }else{
+            $sliders.children().eq(n).animate({"opacity":0},600);
+            $sliders.children().eq(n+1).animate({"opacity":1},600);
+            n++;
+        }
+        setTimeout(function(){
+            stopInterval();
+            startSlider();
+        },5000);
+    });
+    $("#left-carret").on('click',function(){
+        clearInterval(interval);
+        if(n < 1){
+            n = max;
+            $sliders.children().eq(n).animate({"opacity":1},400);
+            $sliders.children().eq(1).animate({"opacity":0},400);
+        }else{
+            $sliders.children().eq(n).animate({"opacity":0},400);
+            $sliders.children().eq(n-1).animate({"opacity":1},400);
+            n--;
+        }
+        setTimeout(function(){
+            stopInterval();
+            startSlider();
+        },5000);
+    });
 	function stopInterval(){
 		clearInterval(interval);
 	}
-	$slider.on('mouseenter', stopInterval).on('mouseleave', startSlider);
+	$sliders.on('mouseenter', stopInterval).on('mouseleave', function(){
+        stopInterval();
+        startSlider();
+    });
 	startSlider();
     /*---------------------------------------*/
     /*code for tabs*/

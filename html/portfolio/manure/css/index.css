@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic);
 /* -------------------general---------------------------- */
-body,
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 h1,
 h2,
 h3,
@@ -12,15 +17,22 @@ h6 {
   font-family: "Roboto";
 }
 /* ----------------------header------------------------- */
-header {
+.wrapper {
+  width: 1350px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 100%;
+  min-height: 1000px;
+}
+.wrapper header {
   display: block;
-  width: 1420px;
+  width: 1350px;
   height: 420px;
   background: url("../images/head-bg.png") no-repeat;
   background-size: 1420px 420px;
   color: white;
 }
-header .top-menu .logo {
+.wrapper header .top-menu .logo {
   display: inline-block;
   height: 70px;
   width: 250px;
@@ -28,19 +40,19 @@ header .top-menu .logo {
   margin-top: 55px;
   text-decoration: none;
 }
-header .top-menu .logo a {
+.wrapper header .top-menu .logo a {
   text-decoration: none;
 }
-header .top-menu .logo a h1 {
+.wrapper header .top-menu .logo a h1 {
   color: white;
   font-size: 50px;
   font-weight: normal;
   display: block;
   letter-spacing: -2px;
 }
-header .top-menu .global-menu {
+.wrapper header .top-menu .global-menu {
   display: inline-block;
-  width: 600px;
+  width: 630px;
   margin-left: 170px;
   margin-top: 10px;
   font-size: 13px;
@@ -48,18 +60,21 @@ header .top-menu .global-menu {
   vertical-align: 10px;
   font-family: monospace;
 }
-header .top-menu .global-menu ul {
+.wrapper header .top-menu .global-menu ul {
   list-style-type: none;
 }
-header .top-menu .global-menu ul li {
+.wrapper header .top-menu .global-menu ul li {
   display: inline-block;
   margin-left: 50px;
 }
-header .top-menu .global-menu ul li a {
+.wrapper header .top-menu .global-menu ul li a {
   text-decoration: none;
   color: white;
 }
-header .top-menu #index-lang {
+.wrapper header .top-menu .global-menu ul li a:hover {
+  color: gold;
+}
+.wrapper header .top-menu .index-lang {
   display: inline-block;
   vertical-align: 10px;
   height: 20px;
@@ -68,7 +83,7 @@ header .top-menu #index-lang {
   background: none;
   border: 1px solid #544949;
 }
-header .site-menu {
+.wrapper header .site-menu {
   display: inline-block;
   margin-top: 10px;
   margin-left: 150px;
@@ -77,144 +92,147 @@ header .site-menu {
   width: 1240px;
   font-family: monospace;
 }
-header .site-menu ul {
+.wrapper header .site-menu ul {
   display: inline-block;
   list-style-type: none;
   height: 45px;
   background: white;
   margin-top: 2px;
 }
-header .site-menu ul li {
+.wrapper header .site-menu ul li {
   display: inline-block;
   margin-left: -10px;
 }
-header .site-menu ul li:first-child {
+.wrapper header .site-menu ul li:first-child {
   margin-left: -40px;
 }
-header .site-menu ul li:first-child a {
+.wrapper header .site-menu ul li:first-child a {
   padding-right: 50px;
   padding-left: 35px;
 }
-header .site-menu ul li:nth-child(6) a {
+.wrapper header .site-menu ul li:nth-child(6) a {
   padding: 16px 30px;
 }
-header .site-menu ul li:last-child {
+.wrapper header .site-menu ul li:last-child {
   margin-left: -10px;
   background: -webkit-linear-gradient(top, #52a728, #745d1e);
 }
-header .site-menu ul li:last-child a {
+.wrapper header .site-menu ul li:last-child a {
   padding: 15px 60px;
   padding-bottom: 12px;
   color: white;
   border: 1px solid white;
 }
-header .site-menu ul li:last-child a span {
+.wrapper header .site-menu ul li:last-child a span {
   margin-top: -10px;
   color: #93a765;
   height: 20px;
 }
-header .site-menu ul li:last-child a span i {
+.wrapper header .site-menu ul li:last-child a span i {
   padding-left: 0;
 }
-header .site-menu ul li a {
+.wrapper header .site-menu ul li a {
   display: block;
   text-decoration: none;
   font-weight: bold;
   color: #6d6e71;
   padding: 16px 15px;
 }
-header .site-menu ul li a i {
+.wrapper header .site-menu ul li a i {
   padding-left: 10px;
 }
-header .slogan {
+.wrapper header .site-menu ul li a:hover {
+  color: red;
+}
+.wrapper header .slogan {
   width: 830px;
   height: 235px;
 }
-header .slogan .first-line {
+.wrapper header .slogan .first-line {
   display: inline-block;
   margin-left: 180px;
   margin-top: 80px;
   font-size: 55px;
 }
-header .slogan .two-line {
+.wrapper header .slogan .two-line {
   display: inline-block;
   margin-left: 300px;
   margin-top: -25px;
   font-size: 55px;
 }
-header .slogan .three-line {
+.wrapper header .slogan .three-line {
   display: inline-block;
   margin-left: 370px;
   margin-top: -15px;
   font-size: 55px;
 }
-.content {
-  min-width: 1420px;
+.wrapper .content {
+  min-width: 1350px;
   display: block;
 }
-.content .left-column {
+.wrapper .content .left-column {
   float: left;
   width: 830px;
   height: 550px;
 }
-.content .left-column .img-bootle {
+.wrapper .content .left-column .img-bootle {
   float: left;
   width: 380px;
   height: 100%;
   position: relative;
 }
-.content .left-column .img-bootle span {
+.wrapper .content .left-column .img-bootle span {
   position: absolute;
   top: -70px;
   left: 90px;
   width: 250px;
   height: 400px;
-  background: url("http://localhost/manure/images/bootle2.png") no-repeat;
+  background: url("../images/bootle2.png") no-repeat;
   background-size: 100% 100%;
 }
-.content .left-column .info-price {
+.wrapper .content .left-column .info-price {
   display: inline-block;
   width: 450px;
 }
-.content .left-column .info-price .mini-info {
+.wrapper .content .left-column .info-price .mini-info {
   display: inline-block;
   width: 420px;
   margin-left: 10px;
   margin-top: 15px;
 }
-.content .left-column .info-price .mini-info i {
+.wrapper .content .left-column .info-price .mini-info i {
   float: left;
   color: #fba740;
 }
-.content .left-column .info-price .mini-info h1 {
+.wrapper .content .left-column .info-price .mini-info h1 {
   color: #4d4545;
   font-size: 30px;
   margin-left: 50px;
 }
-.content .left-column .info-price .mini-info small {
+.wrapper .content .left-column .info-price .mini-info small {
   color: #a7a9ac;
   margin-left: 50px;
 }
-.content .left-column .info-price .mini-info span {
+.wrapper .content .left-column .info-price .mini-info span {
   color: #c49a6c;
   margin-left: 50px;
   font-size: 30px;
 }
-.content .left-column .info-price .more-info {
+.wrapper .content .left-column .info-price .more-info {
   margin-top: 40px;
 }
-.content .left-column .info-price .more-info h1 {
+.wrapper .content .left-column .info-price .more-info h1 {
   font-size: 40px;
   color: #25383f;
 }
-.content .left-column .info-price .more-info ul {
+.wrapper .content .left-column .info-price .more-info ul {
   margin-top: 30px;
   list-style: none;
 }
-.content .left-column .info-price .more-info ul li {
+.wrapper .content .left-column .info-price .more-info ul li {
   margin-left: -30px;
 }
-.content .left-column .info-price .more-info ul li a {
+.wrapper .content .left-column .info-price .more-info ul li a {
   font-family: Roboto;
   font-weight: bold;
   font-size: 25px;
@@ -223,15 +241,18 @@ header .slogan .three-line {
   border: 5px solid black;
   padding: 10px 30px;
 }
-.content .right-column {
+.wrapper .content .left-column .info-price .more-info ul li a:hover {
+  color: #b9150d;
+}
+.wrapper .content .right-column {
   display: inline-block;
-  background: url("http://localhost/manure/images/corn.png") no-repeat;
+  background: url("../manure/images/corn.png") no-repeat;
   background-size: 100% 100%;
-  width: 590px;
+  width: 470px;
   height: 550px;
   position: relative;
 }
-.content .right-column .font-calc {
+.wrapper .content .right-column .font-calc {
   position: absolute;
   top: -170px;
   left: 80px;
@@ -239,7 +260,7 @@ header .slogan .three-line {
   width: 350px;
   height: 590px;
 }
-.content .right-column .font-calc .calc {
+.wrapper .content .right-column .font-calc .calc {
   margin-left: 15px;
   margin-top: 10px;
   height: 560px;
@@ -248,29 +269,29 @@ header .slogan .three-line {
   border: 2px dashed #a7a9ac;
   color: #25383f;
 }
-.content .right-column .font-calc .calc .calculate {
+.wrapper .content .right-column .font-calc .calc .calculate {
   display: block;
   font-size: 30px;
   margin-left: 50px;
   margin-top: 20px;
 }
-.content .right-column .font-calc .calc .profit {
+.wrapper .content .right-column .font-calc .calc .profit {
   display: block;
   font-size: 30px;
   margin-left: 75px;
 }
-.content .right-column .font-calc .calc .argum {
+.wrapper .content .right-column .font-calc .calc .argum {
   display: block;
   margin-left: 20px;
 }
-.content .right-column .font-calc .calc form {
+.wrapper .content .right-column .font-calc .calc form {
   color: #25383f;
   margin-top: 25px;
 }
-.content .right-column .font-calc .calc form label {
+.wrapper .content .right-column .font-calc .calc form label {
   margin-left: 20px;
 }
-.content .right-column .font-calc .calc form input {
+.wrapper .content .right-column .font-calc .calc form input {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 20px;
@@ -280,45 +301,18 @@ header .slogan .three-line {
   border: 1px solid #d1d3d4;
   padding-left: 10px;
 }
-.content .right-column .font-calc .calc form ::-webkit-input-placeholder {
+.wrapper .content .right-column .font-calc .calc form ::-webkit-input-placeholder {
   color: #a7a9ac;
 }
 footer {
-  min-width: 1420px;
-  height: 300px;
+  width: 1350px;
+  margin: 0 auto;
+  height: 150px;
   background: black;
 }
-/* .contents{
-	display:inline-block;
-	background: green;
-	
-	.info{
-		display:inline-block;
-		width:825px;
-		height:550px;
-			.first-column{
-				width:410px;
-				background: red;
-				.bootle{
-				width:180px;
-				height:300px;
-				background:url("http://localhost/manure/images/bootle2.png") no-repeat;
-				background-size:180px 300px;
-			}
-			}
-	}
-	.calculate{
-		display:inline-block;
-		height:550px;
-		width:590px;
-		background: url("http://localhost/manure/images/corn.png") no-repeat;
-		background-size:550px 590px;
-	}
+footer .footer-develop {
+  display: inline-block;
+  width: auto;
+  margin: 100px 550px;
+  color: gold;
 }
-footer{
-	margin-top:5px;
-	display:inline-block;
-	background:black;
-	width:1420px;
-	height:100px;
-} */
